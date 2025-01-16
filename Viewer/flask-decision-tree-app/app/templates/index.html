@@ -6,9 +6,48 @@
     <title>Decision Tree</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+    <style>
+        .node {
+            padding: 10px;
+            margin: 20px;
+            border: 1px solid #000;
+            cursor: pointer;
+            display: inline-block;
+            position: absolute;
+        }
+
+        .children {
+            display: flex;
+            justify-content: center;
+            position: relative;
+            margin-top: 40px;
+        }
+
+        .arrow {
+            width: 10px;
+            height: 10px;
+            border-left: 10px solid transparent;
+            border-right: 10px solid transparent;
+            border-top: 10px solid black;
+            position: relative;
+        }
+
+        .arrow-label {
+            position: absolute;
+            top: -30px;
+            left: 50%;
+            transform: translateX(-50%);
+            font-size: 12px;
+        }
+    </style>
 </head>
 <body>
-    <div id="tree-container"></div>
+    <h1>Decision Tree</h1>
+    <div id="tree-container">
+        <!-- Узлы дерева будут добавлены здесь -->
+    </div>
+
     <script>
         $(document).ready(function() {
             const treeData = {
@@ -28,24 +67,61 @@
             };
 
             function createNode(node) {
-                const nodeElement = $('<div>').addClass('node').text(node.name);
+                const nodeElement = $('<div>').addClass('node').text(node.name).attr('id', 'node-' + node.id);
                 nodeElement.click(function() {
                     $.get(`/node/${node.id}`, function(data) {
                         alert(`Средний прогноз: ${data.prediction}`);
                     });
                 });
+                nodeElement.draggable({
+                    drag: function(event, ui) {
+                        updateArrows();
+                    }
+                });
                 return nodeElement;
             }
 
-            function displayTree(node, container) {
+            function createArrow(label, fromNode, toNode) {
+                const arrowElement = $('<div>').addClass('arrow').attr('id', 'arrow-' + fromNode.id + '-' + toNode.id);
+                const labelElement = $('<div>').addClass('arrow-label').text(label);
+                arrowElement.append(labelElement);
+                return arrowElement;
+            }
+
+            function updateArrows() {
+                $('.arrow').each(function() {
+                    const arrow = $(this);
+                    const ids = arrow.attr('id').split('-');
+                    const fromNode = $('#node-' + ids[1]);
+                    const toNode = $('#node-' + ids[2]);
+                    const fromOffset = fromNode.offset();
+                    const toOffset = toNode.offset();
+                    const left = (fromOffset.left + toOffset.left) / 2;
+                    const top = fromOffset.top + fromNode.outerHeight();
+                    arrow.css({
+                        left: left,
+                        top: top
+                    });
+                });
+            }
+
+            function displayTree(node, container, label = '') {
                 const nodeElement = createNode(node);
                 container.append(nodeElement);
+                if (label) {
+                    const arrowElement = createArrow(label, node, node);
+                    container.append(arrowElement);
+                }
                 if (node.left_child || node.right_child) {
                     const childrenContainer = $('<div>').addClass('children');
                     if (node.left_child) {
+                        const leftArrow = createArrow('rule1', node, node.left_child);
+                        container.append(leftArrow);
                         displayTree(node.left_child, childrenContainer);
                     }
                     if (node.right_child) {
+                        const rightArrow = createArrow('rule2', node, node.right_child);
+                        container.append(rightArrow);
                         displayTree(node.right_child, childrenContainer);
                     }
                     container.append(childrenContainer);
@@ -55,6 +131,7 @@
             // Отображаем дерево решений
             const treeContainer = $('#tree-container');
             displayTree(treeData, treeContainer);
+            updateArrows();
         });
     </script>
 </body>
