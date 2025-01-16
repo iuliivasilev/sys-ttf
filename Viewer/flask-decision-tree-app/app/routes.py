@@ -6,7 +6,9 @@ main = Blueprint('main', __name__)
 # Главный маршрут для отображения веб-страницы
 @main.route('/')
 def index():
-    return render_template('index.html')
+    tree = DecisionTree()  # Инициализируем дерево вручную
+    tree_dict = tree.to_dict()  # Преобразуем дерево в словарь для передачи в шаблон
+    return render_template('index.html', tree=tree_dict)
 
 # Маршрут для получения средней прогнозируемой величины в узле
 @main.route('/node/<int:node_id>')

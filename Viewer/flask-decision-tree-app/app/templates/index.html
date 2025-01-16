@@ -1,19 +1,61 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Дерево решений</title>
+    <title>Decision Tree</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
-    <script src="{{ url_for('static', filename='js/scripts.js') }}" defer></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </head>
 <body>
-    <div id="decision-tree">
-        <!-- Здесь будет отображаться дерево решений -->
-    </div>
-    <div id="node-info">
-        <h2>Информация об узле</h2>
-        <p id="average-prediction">Нажмите на узел, чтобы увидеть среднюю прогнозируемую величину.</p>
-    </div>
+    <div id="tree-container"></div>
+    <script>
+        $(document).ready(function() {
+            const treeData = {
+                id: 1,
+                name: 'Root',
+                average_prediction: 50.0,
+                left_child: {
+                    id: 2,
+                    name: 'Left Child',
+                    average_prediction: 30.0
+                },
+                right_child: {
+                    id: 3,
+                    name: 'Right Child',
+                    average_prediction: 70.0
+                }
+            };
+
+            function createNode(node) {
+                const nodeElement = $('<div>').addClass('node').text(node.name);
+                nodeElement.click(function() {
+                    $.get(`/node/${node.id}`, function(data) {
+                        alert(`Средний прогноз: ${data.prediction}`);
+                    });
+                });
+                return nodeElement;
+            }
+
+            function displayTree(node, container) {
+                const nodeElement = createNode(node);
+                container.append(nodeElement);
+                if (node.left_child || node.right_child) {
+                    const childrenContainer = $('<div>').addClass('children');
+                    if (node.left_child) {
+                        displayTree(node.left_child, childrenContainer);
+                    }
+                    if (node.right_child) {
+                        displayTree(node.right_child, childrenContainer);
+                    }
+                    container.append(childrenContainer);
+                }
+            }
+
+            // Отображаем дерево решений
+            const treeContainer = $('#tree-container');
+            displayTree(treeData, treeContainer);
+        });
+    </script>
 </body>
 </html>

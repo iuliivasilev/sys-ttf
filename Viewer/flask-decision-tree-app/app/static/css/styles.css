@@ -1,45 +1,21 @@
 body {
     font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
-    margin: 0;
-    padding: 20px;
 }
 
-h1 {
-    text-align: center;
-    color: #333;
-}
-
-.tree {
+#tree-container {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
 .node {
-    background-color: #fff;
-    border: 2px solid #007bff;
-    border-radius: 5px;
     padding: 10px;
-    margin: 10px;
+    margin: 5px;
+    border: 1px solid #000;
     cursor: pointer;
-    transition: background-color 0.3s;
 }
 
-.node:hover {
-    background-color: #e7f1ff;
-}
-
-.arrow {
-    width: 2px;
-    height: 20px;
-    background-color: #007bff;
-    margin: 0 auto;
-}
-
-.average-prediction {
-    font-weight: bold;
-    color: #007bff;
-    text-align: center;
-    margin-top: 10px;
+.children {
+    display: flex;
+    justify-content: center;
 }

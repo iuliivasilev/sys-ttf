@@ -9,6 +9,18 @@ class DecisionNode:
     def __repr__(self):
         return f'<DecisionNode {self.name}: {self.average_prediction}>'
 
+    def to_dict(self):
+        node_dict = {
+            'id': self.id,
+            'name': self.name,
+            'average_prediction': self.average_prediction
+        }
+        if self.left_child:
+            node_dict['left_child'] = self.left_child.to_dict()
+        if self.right_child:
+            node_dict['right_child'] = self.right_child.to_dict()
+        return node_dict
+
 class DecisionTree:
     def __init__(self):
         # Пример инициализации дерева вручную
@@ -30,3 +42,6 @@ class DecisionTree:
         if left_result:
             return left_result
         return self._find_node(current_node.right_child, node_id)
+
+    def to_dict(self):
+        return self.root.to_dict()
