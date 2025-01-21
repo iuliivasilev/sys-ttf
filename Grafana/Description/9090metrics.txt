@@ -1,0 +1,1247 @@
+# HELP go_gc_duration_seconds A summary of the GC invocation durations.
+# TYPE go_gc_duration_seconds summary
+go_gc_duration_seconds{quantile="0"} 1.8099e-05
+go_gc_duration_seconds{quantile="0.25"} 2.3723e-05
+go_gc_duration_seconds{quantile="0.5"} 4.1382e-05
+go_gc_duration_seconds{quantile="0.75"} 6.1895e-05
+go_gc_duration_seconds{quantile="1"} 0.006108827
+go_gc_duration_seconds_sum 17.065660209
+go_gc_duration_seconds_count 111080
+# HELP go_goroutines Number of goroutines that currently exist.
+# TYPE go_goroutines gauge
+go_goroutines 346
+# HELP go_info Information about the Go environment.
+# TYPE go_info gauge
+go_info{version="go1.12.3"} 1
+# HELP go_memstats_alloc_bytes Number of bytes allocated and still in use.
+# TYPE go_memstats_alloc_bytes gauge
+go_memstats_alloc_bytes 3.63722048e+08
+# HELP go_memstats_alloc_bytes_total Total number of bytes allocated, even if freed.
+# TYPE go_memstats_alloc_bytes_total counter
+go_memstats_alloc_bytes_total 1.2466459187264e+13
+# HELP go_memstats_buck_hash_sys_bytes Number of bytes used by the profiling bucket hash table.
+# TYPE go_memstats_buck_hash_sys_bytes gauge
+go_memstats_buck_hash_sys_bytes 2.1814236e+07
+# HELP go_memstats_frees_total Total number of frees.
+# TYPE go_memstats_frees_total counter
+go_memstats_frees_total 9.0238899284e+10
+# HELP go_memstats_gc_cpu_fraction The fraction of this program's available CPU time used by the GC since the program started.
+# TYPE go_memstats_gc_cpu_fraction gauge
+go_memstats_gc_cpu_fraction 0.0009167411582033451
+# HELP go_memstats_gc_sys_bytes Number of bytes used for garbage collection system metadata.
+# TYPE go_memstats_gc_sys_bytes gauge
+go_memstats_gc_sys_bytes 8.7287808e+07
+# HELP go_memstats_heap_alloc_bytes Number of heap bytes allocated and still in use.
+# TYPE go_memstats_heap_alloc_bytes gauge
+go_memstats_heap_alloc_bytes 3.63722048e+08
+# HELP go_memstats_heap_idle_bytes Number of heap bytes waiting to be used.
+# TYPE go_memstats_heap_idle_bytes gauge
+go_memstats_heap_idle_bytes 1.779187712e+09
+# HELP go_memstats_heap_inuse_bytes Number of heap bytes that are in use.
+# TYPE go_memstats_heap_inuse_bytes gauge
+go_memstats_heap_inuse_bytes 4.31669248e+08
+# HELP go_memstats_heap_objects Number of allocated objects.
+# TYPE go_memstats_heap_objects gauge
+go_memstats_heap_objects 2.712114e+06
+# HELP go_memstats_heap_released_bytes Number of heap bytes released to OS.
+# TYPE go_memstats_heap_released_bytes gauge
+go_memstats_heap_released_bytes 1.735524352e+09
+# HELP go_memstats_heap_sys_bytes Number of heap bytes obtained from system.
+# TYPE go_memstats_heap_sys_bytes gauge
+go_memstats_heap_sys_bytes 2.21085696e+09
+# HELP go_memstats_last_gc_time_seconds Number of seconds since 1970 of last garbage collection.
+# TYPE go_memstats_last_gc_time_seconds gauge
+go_memstats_last_gc_time_seconds 1.7374575625670974e+09
+# HELP go_memstats_lookups_total Total number of pointer lookups.
+# TYPE go_memstats_lookups_total counter
+go_memstats_lookups_total 0
+# HELP go_memstats_mallocs_total Total number of mallocs.
+# TYPE go_memstats_mallocs_total counter
+go_memstats_mallocs_total 9.0241611398e+10
+# HELP go_memstats_mcache_inuse_bytes Number of bytes in use by mcache structures.
+# TYPE go_memstats_mcache_inuse_bytes gauge
+go_memstats_mcache_inuse_bytes 3472
+# HELP go_memstats_mcache_sys_bytes Number of bytes used for mcache structures obtained from system.
+# TYPE go_memstats_mcache_sys_bytes gauge
+go_memstats_mcache_sys_bytes 16384
+# HELP go_memstats_mspan_inuse_bytes Number of bytes in use by mspan structures.
+# TYPE go_memstats_mspan_inuse_bytes gauge
+go_memstats_mspan_inuse_bytes 6.950736e+06
+# HELP go_memstats_mspan_sys_bytes Number of bytes used for mspan structures obtained from system.
+# TYPE go_memstats_mspan_sys_bytes gauge
+go_memstats_mspan_sys_bytes 2.301952e+07
+# HELP go_memstats_next_gc_bytes Number of heap bytes when next garbage collection will take place.
+# TYPE go_memstats_next_gc_bytes gauge
+go_memstats_next_gc_bytes 5.75606256e+08
+# HELP go_memstats_other_sys_bytes Number of bytes used for other system allocations.
+# TYPE go_memstats_other_sys_bytes gauge
+go_memstats_other_sys_bytes 4.48054e+06
+# HELP go_memstats_stack_inuse_bytes Number of bytes in use by the stack allocator.
+# TYPE go_memstats_stack_inuse_bytes gauge
+go_memstats_stack_inuse_bytes 3.735552e+06
+# HELP go_memstats_stack_sys_bytes Number of bytes obtained from system for stack allocator.
+# TYPE go_memstats_stack_sys_bytes gauge
+go_memstats_stack_sys_bytes 3.735552e+06
+# HELP go_memstats_sys_bytes Number of bytes obtained from system.
+# TYPE go_memstats_sys_bytes gauge
+go_memstats_sys_bytes 2.351211e+09
+# HELP go_threads Number of OS threads created.
+# TYPE go_threads gauge
+go_threads 15
+# HELP net_conntrack_dialer_conn_attempted_total Total number of connections attempted by the given dialer a given name.
+# TYPE net_conntrack_dialer_conn_attempted_total counter
+net_conntrack_dialer_conn_attempted_total{dialer_name="alertmanager"} 0
+net_conntrack_dialer_conn_attempted_total{dialer_name="default"} 0
+net_conntrack_dialer_conn_attempted_total{dialer_name="node_248"} 1.5342342e+07
+net_conntrack_dialer_conn_attempted_total{dialer_name="node_371"} 9.680043e+06
+net_conntrack_dialer_conn_attempted_total{dialer_name="node_515"} 1.0301133e+07
+net_conntrack_dialer_conn_attempted_total{dialer_name="node_574"} 1.9142088e+07
+net_conntrack_dialer_conn_attempted_total{dialer_name="node_604"} 6.356897e+06
+net_conntrack_dialer_conn_attempted_total{dialer_name="node_642"} 8.900382e+06
+net_conntrack_dialer_conn_attempted_total{dialer_name="node_704"} 6.306179e+06
+net_conntrack_dialer_conn_attempted_total{dialer_name="node_735"} 1.1035812e+07
+net_conntrack_dialer_conn_attempted_total{dialer_name="node_758"} 1.4590112e+07
+net_conntrack_dialer_conn_attempted_total{dialer_name="node_angel"} 253
+net_conntrack_dialer_conn_attempted_total{dialer_name="node_localhost"} 1
+net_conntrack_dialer_conn_attempted_total{dialer_name="node_mz0"} 1.2332054e+07
+net_conntrack_dialer_conn_attempted_total{dialer_name="node_mz1"} 1.8176581e+07
+net_conntrack_dialer_conn_attempted_total{dialer_name="node_mz2"} 1.830903e+07
+net_conntrack_dialer_conn_attempted_total{dialer_name="node_mz3"} 1.787399e+07
+net_conntrack_dialer_conn_attempted_total{dialer_name="node_mz4"} 1.7447285e+07
+net_conntrack_dialer_conn_attempted_total{dialer_name="prometheus"} 1
+net_conntrack_dialer_conn_attempted_total{dialer_name="test-vms"} 787134
+# HELP net_conntrack_dialer_conn_closed_total Total number of connections closed which originated from the dialer of a given name.
+# TYPE net_conntrack_dialer_conn_closed_total counter
+net_conntrack_dialer_conn_closed_total{dialer_name="alertmanager"} 0
+net_conntrack_dialer_conn_closed_total{dialer_name="default"} 0
+net_conntrack_dialer_conn_closed_total{dialer_name="node_248"} 5188
+net_conntrack_dialer_conn_closed_total{dialer_name="node_371"} 1826
+net_conntrack_dialer_conn_closed_total{dialer_name="node_515"} 11471
+net_conntrack_dialer_conn_closed_total{dialer_name="node_574"} 1014
+net_conntrack_dialer_conn_closed_total{dialer_name="node_604"} 137
+net_conntrack_dialer_conn_closed_total{dialer_name="node_642"} 473
+net_conntrack_dialer_conn_closed_total{dialer_name="node_704"} 0
+net_conntrack_dialer_conn_closed_total{dialer_name="node_735"} 0
+net_conntrack_dialer_conn_closed_total{dialer_name="node_758"} 1035
+net_conntrack_dialer_conn_closed_total{dialer_name="node_angel"} 9
+net_conntrack_dialer_conn_closed_total{dialer_name="node_localhost"} 0
+net_conntrack_dialer_conn_closed_total{dialer_name="node_mz0"} 321
+net_conntrack_dialer_conn_closed_total{dialer_name="node_mz1"} 987
+net_conntrack_dialer_conn_closed_total{dialer_name="node_mz2"} 1225
+net_conntrack_dialer_conn_closed_total{dialer_name="node_mz3"} 4145
+net_conntrack_dialer_conn_closed_total{dialer_name="node_mz4"} 1041
+net_conntrack_dialer_conn_closed_total{dialer_name="prometheus"} 0
+net_conntrack_dialer_conn_closed_total{dialer_name="test-vms"} 7
+# HELP net_conntrack_dialer_conn_established_total Total number of connections successfully established by the given dialer a given name.
+# TYPE net_conntrack_dialer_conn_established_total counter
+net_conntrack_dialer_conn_established_total{dialer_name="alertmanager"} 0
+net_conntrack_dialer_conn_established_total{dialer_name="default"} 0
+net_conntrack_dialer_conn_established_total{dialer_name="node_248"} 5188
+net_conntrack_dialer_conn_established_total{dialer_name="node_371"} 1829
+net_conntrack_dialer_conn_established_total{dialer_name="node_515"} 11471
+net_conntrack_dialer_conn_established_total{dialer_name="node_574"} 1014
+net_conntrack_dialer_conn_established_total{dialer_name="node_604"} 145
+net_conntrack_dialer_conn_established_total{dialer_name="node_642"} 473
+net_conntrack_dialer_conn_established_total{dialer_name="node_704"} 0
+net_conntrack_dialer_conn_established_total{dialer_name="node_735"} 0
+net_conntrack_dialer_conn_established_total{dialer_name="node_758"} 1035
+net_conntrack_dialer_conn_established_total{dialer_name="node_angel"} 10
+net_conntrack_dialer_conn_established_total{dialer_name="node_localhost"} 1
+net_conntrack_dialer_conn_established_total{dialer_name="node_mz0"} 321
+net_conntrack_dialer_conn_established_total{dialer_name="node_mz1"} 987
+net_conntrack_dialer_conn_established_total{dialer_name="node_mz2"} 1225
+net_conntrack_dialer_conn_established_total{dialer_name="node_mz3"} 4145
+net_conntrack_dialer_conn_established_total{dialer_name="node_mz4"} 1041
+net_conntrack_dialer_conn_established_total{dialer_name="prometheus"} 1
+net_conntrack_dialer_conn_established_total{dialer_name="test-vms"} 7
+# HELP net_conntrack_dialer_conn_failed_total Total number of connections failed to dial by the dialer a given name.
+# TYPE net_conntrack_dialer_conn_failed_total counter
+net_conntrack_dialer_conn_failed_total{dialer_name="alertmanager",reason="refused"} 0
+net_conntrack_dialer_conn_failed_total{dialer_name="alertmanager",reason="resolution"} 0
+net_conntrack_dialer_conn_failed_total{dialer_name="alertmanager",reason="timeout"} 0
+net_conntrack_dialer_conn_failed_total{dialer_name="alertmanager",reason="unknown"} 0
+net_conntrack_dialer_conn_failed_total{dialer_name="default",reason="refused"} 0
+net_conntrack_dialer_conn_failed_total{dialer_name="default",reason="resolution"} 0
+net_conntrack_dialer_conn_failed_total{dialer_name="default",reason="timeout"} 0
+net_conntrack_dialer_conn_failed_total{dialer_name="default",reason="unknown"} 0
+net_conntrack_dialer_conn_failed_total{dialer_name="node_248",reason="refused"} 99120
+net_conntrack_dialer_conn_failed_total{dialer_name="node_248",reason="resolution"} 8.600681e+06
+net_conntrack_dialer_conn_failed_total{dialer_name="node_248",reason="timeout"} 6.637262e+06
+net_conntrack_dialer_conn_failed_total{dialer_name="node_248",reason="unknown"} 6.736473e+06
+net_conntrack_dialer_conn_failed_total{dialer_name="node_371",reason="refused"} 33776
+net_conntrack_dialer_conn_failed_total{dialer_name="node_371",reason="resolution"} 3.480861e+06
+net_conntrack_dialer_conn_failed_total{dialer_name="node_371",reason="timeout"} 6.163495e+06
+net_conntrack_dialer_conn_failed_total{dialer_name="node_371",reason="unknown"} 6.197353e+06
+net_conntrack_dialer_conn_failed_total{dialer_name="node_515",reason="refused"} 67697
+net_conntrack_dialer_conn_failed_total{dialer_name="node_515",reason="resolution"} 6.081455e+06
+net_conntrack_dialer_conn_failed_total{dialer_name="node_515",reason="timeout"} 4.140454e+06
+net_conntrack_dialer_conn_failed_total{dialer_name="node_515",reason="unknown"} 4.208207e+06
+net_conntrack_dialer_conn_failed_total{dialer_name="node_574",reason="refused"} 121344
+net_conntrack_dialer_conn_failed_total{dialer_name="node_574",reason="resolution"} 8.032349e+06
+net_conntrack_dialer_conn_failed_total{dialer_name="node_574",reason="timeout"} 1.0987257e+07
+net_conntrack_dialer_conn_failed_total{dialer_name="node_574",reason="unknown"} 1.1108725e+07
+net_conntrack_dialer_conn_failed_total{dialer_name="node_604",reason="refused"} 797159
+net_conntrack_dialer_conn_failed_total{dialer_name="node_604",reason="resolution"} 2.888237e+06
+net_conntrack_dialer_conn_failed_total{dialer_name="node_604",reason="timeout"} 2.67133e+06
+net_conntrack_dialer_conn_failed_total{dialer_name="node_604",reason="unknown"} 3.468515e+06
+net_conntrack_dialer_conn_failed_total{dialer_name="node_642",reason="refused"} 110
+net_conntrack_dialer_conn_failed_total{dialer_name="node_642",reason="resolution"} 4.377025e+06
+net_conntrack_dialer_conn_failed_total{dialer_name="node_642",reason="timeout"} 4.522729e+06
+net_conntrack_dialer_conn_failed_total{dialer_name="node_642",reason="unknown"} 4.522884e+06
+net_conntrack_dialer_conn_failed_total{dialer_name="node_704",reason="refused"} 3.735145e+06
+net_conntrack_dialer_conn_failed_total{dialer_name="node_704",reason="resolution"} 2.570351e+06
+net_conntrack_dialer_conn_failed_total{dialer_name="node_704",reason="timeout"} 665
+net_conntrack_dialer_conn_failed_total{dialer_name="node_704",reason="unknown"} 3.735828e+06
+net_conntrack_dialer_conn_failed_total{dialer_name="node_735",reason="refused"} 0
+net_conntrack_dialer_conn_failed_total{dialer_name="node_735",reason="resolution"} 4.498115e+06
+net_conntrack_dialer_conn_failed_total{dialer_name="node_735",reason="timeout"} 6.537654e+06
+net_conntrack_dialer_conn_failed_total{dialer_name="node_735",reason="unknown"} 6.537697e+06
+net_conntrack_dialer_conn_failed_total{dialer_name="node_758",reason="refused"} 92083
+net_conntrack_dialer_conn_failed_total{dialer_name="node_758",reason="resolution"} 8.539775e+06
+net_conntrack_dialer_conn_failed_total{dialer_name="node_758",reason="timeout"} 5.957143e+06
+net_conntrack_dialer_conn_failed_total{dialer_name="node_758",reason="unknown"} 6.049302e+06
+net_conntrack_dialer_conn_failed_total{dialer_name="node_angel",reason="refused"} 0
+net_conntrack_dialer_conn_failed_total{dialer_name="node_angel",reason="resolution"} 1
+net_conntrack_dialer_conn_failed_total{dialer_name="node_angel",reason="timeout"} 242
+net_conntrack_dialer_conn_failed_total{dialer_name="node_angel",reason="unknown"} 242
+net_conntrack_dialer_conn_failed_total{dialer_name="node_localhost",reason="refused"} 0
+net_conntrack_dialer_conn_failed_total{dialer_name="node_localhost",reason="resolution"} 0
+net_conntrack_dialer_conn_failed_total{dialer_name="node_localhost",reason="timeout"} 0
+net_conntrack_dialer_conn_failed_total{dialer_name="node_localhost",reason="unknown"} 0
+net_conntrack_dialer_conn_failed_total{dialer_name="node_mz0",reason="refused"} 8547
+net_conntrack_dialer_conn_failed_total{dialer_name="node_mz0",reason="resolution"} 5.140704e+06
+net_conntrack_dialer_conn_failed_total{dialer_name="node_mz0",reason="timeout"} 7.182392e+06
+net_conntrack_dialer_conn_failed_total{dialer_name="node_mz0",reason="unknown"} 7.191029e+06
+net_conntrack_dialer_conn_failed_total{dialer_name="node_mz1",reason="refused"} 1376
+net_conntrack_dialer_conn_failed_total{dialer_name="node_mz1",reason="resolution"} 7.71105e+06
+net_conntrack_dialer_conn_failed_total{dialer_name="node_mz1",reason="timeout"} 1.0463029e+07
+net_conntrack_dialer_conn_failed_total{dialer_name="node_mz1",reason="unknown"} 1.0464544e+07
+net_conntrack_dialer_conn_failed_total{dialer_name="node_mz2",reason="refused"} 74985
+net_conntrack_dialer_conn_failed_total{dialer_name="node_mz2",reason="resolution"} 7.711052e+06
+net_conntrack_dialer_conn_failed_total{dialer_name="node_mz2",reason="timeout"} 1.0521639e+07
+net_conntrack_dialer_conn_failed_total{dialer_name="node_mz2",reason="unknown"} 1.0596753e+07
+net_conntrack_dialer_conn_failed_total{dialer_name="node_mz3",reason="refused"} 8923
+net_conntrack_dialer_conn_failed_total{dialer_name="node_mz3",reason="resolution"} 7.711049e+06
+net_conntrack_dialer_conn_failed_total{dialer_name="node_mz3",reason="timeout"} 1.014971e+07
+net_conntrack_dialer_conn_failed_total{dialer_name="node_mz3",reason="unknown"} 1.0158796e+07
+net_conntrack_dialer_conn_failed_total{dialer_name="node_mz4",reason="refused"} 7910
+net_conntrack_dialer_conn_failed_total{dialer_name="node_mz4",reason="resolution"} 7.389758e+06
+net_conntrack_dialer_conn_failed_total{dialer_name="node_mz4",reason="timeout"} 1.0048435e+07
+net_conntrack_dialer_conn_failed_total{dialer_name="node_mz4",reason="unknown"} 1.0056486e+07
+net_conntrack_dialer_conn_failed_total{dialer_name="prometheus",reason="refused"} 0
+net_conntrack_dialer_conn_failed_total{dialer_name="prometheus",reason="resolution"} 0
+net_conntrack_dialer_conn_failed_total{dialer_name="prometheus",reason="timeout"} 0
+net_conntrack_dialer_conn_failed_total{dialer_name="prometheus",reason="unknown"} 0
+net_conntrack_dialer_conn_failed_total{dialer_name="test-vms",reason="refused"} 453441
+net_conntrack_dialer_conn_failed_total{dialer_name="test-vms",reason="resolution"} 321294
+net_conntrack_dialer_conn_failed_total{dialer_name="test-vms",reason="timeout"} 399
+net_conntrack_dialer_conn_failed_total{dialer_name="test-vms",reason="unknown"} 465833
+# HELP net_conntrack_listener_conn_accepted_total Total number of connections opened to the listener of a given name.
+# TYPE net_conntrack_listener_conn_accepted_total counter
+net_conntrack_listener_conn_accepted_total{listener_name="http"} 3351
+# HELP net_conntrack_listener_conn_closed_total Total number of connections closed that were made to the listener of a given name.
+# TYPE net_conntrack_listener_conn_closed_total counter
+net_conntrack_listener_conn_closed_total{listener_name="http"} 3499
+# HELP process_cpu_seconds_total Total user and system CPU time spent in seconds.
+# TYPE process_cpu_seconds_total counter
+process_cpu_seconds_total 560859.25
+# HELP process_max_fds Maximum number of open file descriptors.
+# TYPE process_max_fds gauge
+process_max_fds 1024
+# HELP process_open_fds Number of open file descriptors.
+# TYPE process_open_fds gauge
+process_open_fds 73
+# HELP process_resident_memory_bytes Resident memory size in bytes.
+# TYPE process_resident_memory_bytes gauge
+process_resident_memory_bytes 3.23549184e+09
+# HELP process_start_time_seconds Start time of the process since unix epoch in seconds.
+# TYPE process_start_time_seconds gauge
+process_start_time_seconds 1.72563351745e+09
+# HELP process_virtual_memory_bytes Virtual memory size in bytes.
+# TYPE process_virtual_memory_bytes gauge
+process_virtual_memory_bytes 4.742975488e+09
+# HELP process_virtual_memory_max_bytes Maximum amount of virtual memory available in bytes.
+# TYPE process_virtual_memory_max_bytes gauge
+process_virtual_memory_max_bytes -1
+# HELP prometheus_api_remote_read_queries The current number of remote read queries being executed or waiting.
+# TYPE prometheus_api_remote_read_queries gauge
+prometheus_api_remote_read_queries 0
+# HELP prometheus_build_info A metric with a constant '1' value labeled by version, revision, branch, and goversion from which prometheus was built.
+# TYPE prometheus_build_info gauge
+prometheus_build_info{branch="HEAD",goversion="go1.12.3",revision="1a9cdbd024fea05a1888c3164058087476cfdc3b",version="2.9.0"} 1
+# HELP prometheus_config_last_reload_success_timestamp_seconds Timestamp of the last successful configuration reload.
+# TYPE prometheus_config_last_reload_success_timestamp_seconds gauge
+prometheus_config_last_reload_success_timestamp_seconds 1.7256335466628015e+09
+# HELP prometheus_config_last_reload_successful Whether the last configuration reload attempt was successful.
+# TYPE prometheus_config_last_reload_successful gauge
+prometheus_config_last_reload_successful 1
+# HELP prometheus_engine_queries The current number of queries being executed or waiting.
+# TYPE prometheus_engine_queries gauge
+prometheus_engine_queries 0
+# HELP prometheus_engine_queries_concurrent_max The max number of concurrent queries.
+# TYPE prometheus_engine_queries_concurrent_max gauge
+prometheus_engine_queries_concurrent_max 20
+# HELP prometheus_engine_query_duration_seconds Query timings
+# TYPE prometheus_engine_query_duration_seconds summary
+prometheus_engine_query_duration_seconds{slice="inner_eval",quantile="0.5"} NaN
+prometheus_engine_query_duration_seconds{slice="inner_eval",quantile="0.9"} NaN
+prometheus_engine_query_duration_seconds{slice="inner_eval",quantile="0.99"} NaN
+prometheus_engine_query_duration_seconds_sum{slice="inner_eval"} 10657.443591901996
+prometheus_engine_query_duration_seconds_count{slice="inner_eval"} 1.73633e+06
+prometheus_engine_query_duration_seconds{slice="prepare_time",quantile="0.5"} NaN
+prometheus_engine_query_duration_seconds{slice="prepare_time",quantile="0.9"} NaN
+prometheus_engine_query_duration_seconds{slice="prepare_time",quantile="0.99"} NaN
+prometheus_engine_query_duration_seconds_sum{slice="prepare_time"} 4518.85959631507
+prometheus_engine_query_duration_seconds_count{slice="prepare_time"} 1.737159e+06
+prometheus_engine_query_duration_seconds{slice="queue_time",quantile="0.5"} NaN
+prometheus_engine_query_duration_seconds{slice="queue_time",quantile="0.9"} NaN
+prometheus_engine_query_duration_seconds{slice="queue_time",quantile="0.99"} NaN
+prometheus_engine_query_duration_seconds_sum{slice="queue_time"} 2.982686904000106
+prometheus_engine_query_duration_seconds_count{slice="queue_time"} 1.73716e+06
+prometheus_engine_query_duration_seconds{slice="result_sort",quantile="0.5"} NaN
+prometheus_engine_query_duration_seconds{slice="result_sort",quantile="0.9"} NaN
+prometheus_engine_query_duration_seconds{slice="result_sort",quantile="0.99"} NaN
+prometheus_engine_query_duration_seconds_sum{slice="result_sort"} 0.20177664200002707
+prometheus_engine_query_duration_seconds_count{slice="result_sort"} 90495
+# HELP prometheus_http_request_duration_seconds Histogram of latencies for HTTP requests.
+# TYPE prometheus_http_request_duration_seconds histogram
+prometheus_http_request_duration_seconds_bucket{handler="/",le="0.1"} 1
+prometheus_http_request_duration_seconds_bucket{handler="/",le="0.2"} 1
+prometheus_http_request_duration_seconds_bucket{handler="/",le="0.4"} 1
+prometheus_http_request_duration_seconds_bucket{handler="/",le="1"} 1
+prometheus_http_request_duration_seconds_bucket{handler="/",le="3"} 1
+prometheus_http_request_duration_seconds_bucket{handler="/",le="8"} 1
+prometheus_http_request_duration_seconds_bucket{handler="/",le="20"} 1
+prometheus_http_request_duration_seconds_bucket{handler="/",le="60"} 1
+prometheus_http_request_duration_seconds_bucket{handler="/",le="120"} 1
+prometheus_http_request_duration_seconds_bucket{handler="/",le="+Inf"} 1
+prometheus_http_request_duration_seconds_sum{handler="/"} 0.011769466
+prometheus_http_request_duration_seconds_count{handler="/"} 1
+prometheus_http_request_duration_seconds_bucket{handler="/alerts",le="0.1"} 1
+prometheus_http_request_duration_seconds_bucket{handler="/alerts",le="0.2"} 1
+prometheus_http_request_duration_seconds_bucket{handler="/alerts",le="0.4"} 1
+prometheus_http_request_duration_seconds_bucket{handler="/alerts",le="1"} 1
+prometheus_http_request_duration_seconds_bucket{handler="/alerts",le="3"} 1
+prometheus_http_request_duration_seconds_bucket{handler="/alerts",le="8"} 1
+prometheus_http_request_duration_seconds_bucket{handler="/alerts",le="20"} 1
+prometheus_http_request_duration_seconds_bucket{handler="/alerts",le="60"} 1
+prometheus_http_request_duration_seconds_bucket{handler="/alerts",le="120"} 1
+prometheus_http_request_duration_seconds_bucket{handler="/alerts",le="+Inf"} 1
+prometheus_http_request_duration_seconds_sum{handler="/alerts"} 0.001954372
+prometheus_http_request_duration_seconds_count{handler="/alerts"} 1
+prometheus_http_request_duration_seconds_bucket{handler="/api/v1/label/:name/values",le="0.1"} 451
+prometheus_http_request_duration_seconds_bucket{handler="/api/v1/label/:name/values",le="0.2"} 561
+prometheus_http_request_duration_seconds_bucket{handler="/api/v1/label/:name/values",le="0.4"} 613
+prometheus_http_request_duration_seconds_bucket{handler="/api/v1/label/:name/values",le="1"} 616
+prometheus_http_request_duration_seconds_bucket{handler="/api/v1/label/:name/values",le="3"} 616
+prometheus_http_request_duration_seconds_bucket{handler="/api/v1/label/:name/values",le="8"} 616
+prometheus_http_request_duration_seconds_bucket{handler="/api/v1/label/:name/values",le="20"} 616
+prometheus_http_request_duration_seconds_bucket{handler="/api/v1/label/:name/values",le="60"} 616
+prometheus_http_request_duration_seconds_bucket{handler="/api/v1/label/:name/values",le="120"} 616
+prometheus_http_request_duration_seconds_bucket{handler="/api/v1/label/:name/values",le="+Inf"} 616
+prometheus_http_request_duration_seconds_sum{handler="/api/v1/label/:name/values"} 38.203367897
+prometheus_http_request_duration_seconds_count{handler="/api/v1/label/:name/values"} 616
+prometheus_http_request_duration_seconds_bucket{handler="/api/v1/labels",le="0.1"} 55
+prometheus_http_request_duration_seconds_bucket{handler="/api/v1/labels",le="0.2"} 56
+prometheus_http_request_duration_seconds_bucket{handler="/api/v1/labels",le="0.4"} 56
+prometheus_http_request_duration_seconds_bucket{handler="/api/v1/labels",le="1"} 56
+prometheus_http_request_duration_seconds_bucket{handler="/api/v1/labels",le="3"} 56
+prometheus_http_request_duration_seconds_bucket{handler="/api/v1/labels",le="8"} 56
+prometheus_http_request_duration_seconds_bucket{handler="/api/v1/labels",le="20"} 56
+prometheus_http_request_duration_seconds_bucket{handler="/api/v1/labels",le="60"} 56
+prometheus_http_request_duration_seconds_bucket{handler="/api/v1/labels",le="120"} 56
+prometheus_http_request_duration_seconds_bucket{handler="/api/v1/labels",le="+Inf"} 56
+prometheus_http_request_duration_seconds_sum{handler="/api/v1/labels"} 0.29595724700000003
+prometheus_http_request_duration_seconds_count{handler="/api/v1/labels"} 56
+prometheus_http_request_duration_seconds_bucket{handler="/api/v1/query",le="0.1"} 1.644206e+06
+prometheus_http_request_duration_seconds_bucket{handler="/api/v1/query",le="0.2"} 1.644997e+06
+prometheus_http_request_duration_seconds_bucket{handler="/api/v1/query",le="0.4"} 1.645768e+06
+prometheus_http_request_duration_seconds_bucket{handler="/api/v1/query",le="1"} 1.645816e+06
+prometheus_http_request_duration_seconds_bucket{handler="/api/v1/query",le="3"} 1.645818e+06
+prometheus_http_request_duration_seconds_bucket{handler="/api/v1/query",le="8"} 1.645818e+06
+prometheus_http_request_duration_seconds_bucket{handler="/api/v1/query",le="20"} 1.645818e+06
+prometheus_http_request_duration_seconds_bucket{handler="/api/v1/query",le="60"} 1.645818e+06
+prometheus_http_request_duration_seconds_bucket{handler="/api/v1/query",le="120"} 1.645818e+06
+prometheus_http_request_duration_seconds_bucket{handler="/api/v1/query",le="+Inf"} 1.645818e+06
+prometheus_http_request_duration_seconds_sum{handler="/api/v1/query"} 2740.5778071418677
+prometheus_http_request_duration_seconds_count{handler="/api/v1/query"} 1.645818e+06
+prometheus_http_request_duration_seconds_bucket{handler="/api/v1/query_range",le="0.1"} 64118
+prometheus_http_request_duration_seconds_bucket{handler="/api/v1/query_range",le="0.2"} 72541
+prometheus_http_request_duration_seconds_bucket{handler="/api/v1/query_range",le="0.4"} 81034
+prometheus_http_request_duration_seconds_bucket{handler="/api/v1/query_range",le="1"} 88448
+prometheus_http_request_duration_seconds_bucket{handler="/api/v1/query_range",le="3"} 90719
+prometheus_http_request_duration_seconds_bucket{handler="/api/v1/query_range",le="8"} 91423
+prometheus_http_request_duration_seconds_bucket{handler="/api/v1/query_range",le="20"} 91439
+prometheus_http_request_duration_seconds_bucket{handler="/api/v1/query_range",le="60"} 91439
+prometheus_http_request_duration_seconds_bucket{handler="/api/v1/query_range",le="120"} 91439
+prometheus_http_request_duration_seconds_bucket{handler="/api/v1/query_range",le="+Inf"} 91439
+prometheus_http_request_duration_seconds_sum{handler="/api/v1/query_range"} 15851.655801430159
+prometheus_http_request_duration_seconds_count{handler="/api/v1/query_range"} 91439
+prometheus_http_request_duration_seconds_bucket{handler="/api/v1/series",le="0.1"} 10754
+prometheus_http_request_duration_seconds_bucket{handler="/api/v1/series",le="0.2"} 11101
+prometheus_http_request_duration_seconds_bucket{handler="/api/v1/series",le="0.4"} 11157
+prometheus_http_request_duration_seconds_bucket{handler="/api/v1/series",le="1"} 11185
+prometheus_http_request_duration_seconds_bucket{handler="/api/v1/series",le="3"} 11213
+prometheus_http_request_duration_seconds_bucket{handler="/api/v1/series",le="8"} 11243
+prometheus_http_request_duration_seconds_bucket{handler="/api/v1/series",le="20"} 11267
+prometheus_http_request_duration_seconds_bucket{handler="/api/v1/series",le="60"} 11402
+prometheus_http_request_duration_seconds_bucket{handler="/api/v1/series",le="120"} 11445
+prometheus_http_request_duration_seconds_bucket{handler="/api/v1/series",le="+Inf"} 11456
+prometheus_http_request_duration_seconds_sum{handler="/api/v1/series"} 11090.978815434915
+prometheus_http_request_duration_seconds_count{handler="/api/v1/series"} 11456
+prometheus_http_request_duration_seconds_bucket{handler="/config",le="0.1"} 1
+prometheus_http_request_duration_seconds_bucket{handler="/config",le="0.2"} 1
+prometheus_http_request_duration_seconds_bucket{handler="/config",le="0.4"} 1
+prometheus_http_request_duration_seconds_bucket{handler="/config",le="1"} 1
+prometheus_http_request_duration_seconds_bucket{handler="/config",le="3"} 1
+prometheus_http_request_duration_seconds_bucket{handler="/config",le="8"} 1
+prometheus_http_request_duration_seconds_bucket{handler="/config",le="20"} 1
+prometheus_http_request_duration_seconds_bucket{handler="/config",le="60"} 1
+prometheus_http_request_duration_seconds_bucket{handler="/config",le="120"} 1
+prometheus_http_request_duration_seconds_bucket{handler="/config",le="+Inf"} 1
+prometheus_http_request_duration_seconds_sum{handler="/config"} 0.093647454
+prometheus_http_request_duration_seconds_count{handler="/config"} 1
+prometheus_http_request_duration_seconds_bucket{handler="/flags",le="0.1"} 0
+prometheus_http_request_duration_seconds_bucket{handler="/flags",le="0.2"} 1
+prometheus_http_request_duration_seconds_bucket{handler="/flags",le="0.4"} 1
+prometheus_http_request_duration_seconds_bucket{handler="/flags",le="1"} 1
+prometheus_http_request_duration_seconds_bucket{handler="/flags",le="3"} 1
+prometheus_http_request_duration_seconds_bucket{handler="/flags",le="8"} 1
+prometheus_http_request_duration_seconds_bucket{handler="/flags",le="20"} 1
+prometheus_http_request_duration_seconds_bucket{handler="/flags",le="60"} 1
+prometheus_http_request_duration_seconds_bucket{handler="/flags",le="120"} 1
+prometheus_http_request_duration_seconds_bucket{handler="/flags",le="+Inf"} 1
+prometheus_http_request_duration_seconds_sum{handler="/flags"} 0.138968139
+prometheus_http_request_duration_seconds_count{handler="/flags"} 1
+prometheus_http_request_duration_seconds_bucket{handler="/graph",le="0.1"} 4
+prometheus_http_request_duration_seconds_bucket{handler="/graph",le="0.2"} 11
+prometheus_http_request_duration_seconds_bucket{handler="/graph",le="0.4"} 27
+prometheus_http_request_duration_seconds_bucket{handler="/graph",le="1"} 29
+prometheus_http_request_duration_seconds_bucket{handler="/graph",le="3"} 29
+prometheus_http_request_duration_seconds_bucket{handler="/graph",le="8"} 29
+prometheus_http_request_duration_seconds_bucket{handler="/graph",le="20"} 29
+prometheus_http_request_duration_seconds_bucket{handler="/graph",le="60"} 29
+prometheus_http_request_duration_seconds_bucket{handler="/graph",le="120"} 29
+prometheus_http_request_duration_seconds_bucket{handler="/graph",le="+Inf"} 29
+prometheus_http_request_duration_seconds_sum{handler="/graph"} 6.696486118999999
+prometheus_http_request_duration_seconds_count{handler="/graph"} 29
+prometheus_http_request_duration_seconds_bucket{handler="/metrics",le="0.1"} 786039
+prometheus_http_request_duration_seconds_bucket{handler="/metrics",le="0.2"} 786811
+prometheus_http_request_duration_seconds_bucket{handler="/metrics",le="0.4"} 788036
+prometheus_http_request_duration_seconds_bucket{handler="/metrics",le="1"} 788266
+prometheus_http_request_duration_seconds_bucket{handler="/metrics",le="3"} 788274
+prometheus_http_request_duration_seconds_bucket{handler="/metrics",le="8"} 788274
+prometheus_http_request_duration_seconds_bucket{handler="/metrics",le="20"} 788274
+prometheus_http_request_duration_seconds_bucket{handler="/metrics",le="60"} 788274
+prometheus_http_request_duration_seconds_bucket{handler="/metrics",le="120"} 788274
+prometheus_http_request_duration_seconds_bucket{handler="/metrics",le="+Inf"} 788274
+prometheus_http_request_duration_seconds_sum{handler="/metrics"} 4873.750558914081
+prometheus_http_request_duration_seconds_count{handler="/metrics"} 788274
+prometheus_http_request_duration_seconds_bucket{handler="/rules",le="0.1"} 1
+prometheus_http_request_duration_seconds_bucket{handler="/rules",le="0.2"} 1
+prometheus_http_request_duration_seconds_bucket{handler="/rules",le="0.4"} 1
+prometheus_http_request_duration_seconds_bucket{handler="/rules",le="1"} 1
+prometheus_http_request_duration_seconds_bucket{handler="/rules",le="3"} 1
+prometheus_http_request_duration_seconds_bucket{handler="/rules",le="8"} 1
+prometheus_http_request_duration_seconds_bucket{handler="/rules",le="20"} 1
+prometheus_http_request_duration_seconds_bucket{handler="/rules",le="60"} 1
+prometheus_http_request_duration_seconds_bucket{handler="/rules",le="120"} 1
+prometheus_http_request_duration_seconds_bucket{handler="/rules",le="+Inf"} 1
+prometheus_http_request_duration_seconds_sum{handler="/rules"} 0.002154648
+prometheus_http_request_duration_seconds_count{handler="/rules"} 1
+prometheus_http_request_duration_seconds_bucket{handler="/service-discovery",le="0.1"} 2
+prometheus_http_request_duration_seconds_bucket{handler="/service-discovery",le="0.2"} 2
+prometheus_http_request_duration_seconds_bucket{handler="/service-discovery",le="0.4"} 2
+prometheus_http_request_duration_seconds_bucket{handler="/service-discovery",le="1"} 2
+prometheus_http_request_duration_seconds_bucket{handler="/service-discovery",le="3"} 2
+prometheus_http_request_duration_seconds_bucket{handler="/service-discovery",le="8"} 2
+prometheus_http_request_duration_seconds_bucket{handler="/service-discovery",le="20"} 2
+prometheus_http_request_duration_seconds_bucket{handler="/service-discovery",le="60"} 2
+prometheus_http_request_duration_seconds_bucket{handler="/service-discovery",le="120"} 2
+prometheus_http_request_duration_seconds_bucket{handler="/service-discovery",le="+Inf"} 2
+prometheus_http_request_duration_seconds_sum{handler="/service-discovery"} 0.058834484
+prometheus_http_request_duration_seconds_count{handler="/service-discovery"} 2
+prometheus_http_request_duration_seconds_bucket{handler="/static/*filepath",le="0.1"} 326
+prometheus_http_request_duration_seconds_bucket{handler="/static/*filepath",le="0.2"} 350
+prometheus_http_request_duration_seconds_bucket{handler="/static/*filepath",le="0.4"} 350
+prometheus_http_request_duration_seconds_bucket{handler="/static/*filepath",le="1"} 350
+prometheus_http_request_duration_seconds_bucket{handler="/static/*filepath",le="3"} 350
+prometheus_http_request_duration_seconds_bucket{handler="/static/*filepath",le="8"} 350
+prometheus_http_request_duration_seconds_bucket{handler="/static/*filepath",le="20"} 350
+prometheus_http_request_duration_seconds_bucket{handler="/static/*filepath",le="60"} 350
+prometheus_http_request_duration_seconds_bucket{handler="/static/*filepath",le="120"} 350
+prometheus_http_request_duration_seconds_bucket{handler="/static/*filepath",le="+Inf"} 350
+prometheus_http_request_duration_seconds_sum{handler="/static/*filepath"} 7.755516356999997
+prometheus_http_request_duration_seconds_count{handler="/static/*filepath"} 350
+prometheus_http_request_duration_seconds_bucket{handler="/status",le="0.1"} 1
+prometheus_http_request_duration_seconds_bucket{handler="/status",le="0.2"} 1
+prometheus_http_request_duration_seconds_bucket{handler="/status",le="0.4"} 1
+prometheus_http_request_duration_seconds_bucket{handler="/status",le="1"} 1
+prometheus_http_request_duration_seconds_bucket{handler="/status",le="3"} 1
+prometheus_http_request_duration_seconds_bucket{handler="/status",le="8"} 1
+prometheus_http_request_duration_seconds_bucket{handler="/status",le="20"} 1
+prometheus_http_request_duration_seconds_bucket{handler="/status",le="60"} 1
+prometheus_http_request_duration_seconds_bucket{handler="/status",le="120"} 1
+prometheus_http_request_duration_seconds_bucket{handler="/status",le="+Inf"} 1
+prometheus_http_request_duration_seconds_sum{handler="/status"} 0.033101923
+prometheus_http_request_duration_seconds_count{handler="/status"} 1
+prometheus_http_request_duration_seconds_bucket{handler="/targets",le="0.1"} 2
+prometheus_http_request_duration_seconds_bucket{handler="/targets",le="0.2"} 3
+prometheus_http_request_duration_seconds_bucket{handler="/targets",le="0.4"} 3
+prometheus_http_request_duration_seconds_bucket{handler="/targets",le="1"} 3
+prometheus_http_request_duration_seconds_bucket{handler="/targets",le="3"} 3
+prometheus_http_request_duration_seconds_bucket{handler="/targets",le="8"} 3
+prometheus_http_request_duration_seconds_bucket{handler="/targets",le="20"} 3
+prometheus_http_request_duration_seconds_bucket{handler="/targets",le="60"} 3
+prometheus_http_request_duration_seconds_bucket{handler="/targets",le="120"} 3
+prometheus_http_request_duration_seconds_bucket{handler="/targets",le="+Inf"} 3
+prometheus_http_request_duration_seconds_sum{handler="/targets"} 0.289196006
+prometheus_http_request_duration_seconds_count{handler="/targets"} 3
+# HELP prometheus_http_response_size_bytes Histogram of response size for HTTP requests.
+# TYPE prometheus_http_response_size_bytes histogram
+prometheus_http_response_size_bytes_bucket{handler="/",le="100"} 1
+prometheus_http_response_size_bytes_bucket{handler="/",le="1000"} 1
+prometheus_http_response_size_bytes_bucket{handler="/",le="10000"} 1
+prometheus_http_response_size_bytes_bucket{handler="/",le="100000"} 1
+prometheus_http_response_size_bytes_bucket{handler="/",le="1e+06"} 1
+prometheus_http_response_size_bytes_bucket{handler="/",le="1e+07"} 1
+prometheus_http_response_size_bytes_bucket{handler="/",le="1e+08"} 1
+prometheus_http_response_size_bytes_bucket{handler="/",le="1e+09"} 1
+prometheus_http_response_size_bytes_bucket{handler="/",le="+Inf"} 1
+prometheus_http_response_size_bytes_sum{handler="/"} 29
+prometheus_http_response_size_bytes_count{handler="/"} 1
+prometheus_http_response_size_bytes_bucket{handler="/alerts",le="100"} 0
+prometheus_http_response_size_bytes_bucket{handler="/alerts",le="1000"} 0
+prometheus_http_response_size_bytes_bucket{handler="/alerts",le="10000"} 1
+prometheus_http_response_size_bytes_bucket{handler="/alerts",le="100000"} 1
+prometheus_http_response_size_bytes_bucket{handler="/alerts",le="1e+06"} 1
+prometheus_http_response_size_bytes_bucket{handler="/alerts",le="1e+07"} 1
+prometheus_http_response_size_bytes_bucket{handler="/alerts",le="1e+08"} 1
+prometheus_http_response_size_bytes_bucket{handler="/alerts",le="1e+09"} 1
+prometheus_http_response_size_bytes_bucket{handler="/alerts",le="+Inf"} 1
+prometheus_http_response_size_bytes_sum{handler="/alerts"} 4209
+prometheus_http_response_size_bytes_count{handler="/alerts"} 1
+prometheus_http_response_size_bytes_bucket{handler="/api/v1/label/:name/values",le="100"} 0
+prometheus_http_response_size_bytes_bucket{handler="/api/v1/label/:name/values",le="1000"} 285
+prometheus_http_response_size_bytes_bucket{handler="/api/v1/label/:name/values",le="10000"} 616
+prometheus_http_response_size_bytes_bucket{handler="/api/v1/label/:name/values",le="100000"} 616
+prometheus_http_response_size_bytes_bucket{handler="/api/v1/label/:name/values",le="1e+06"} 616
+prometheus_http_response_size_bytes_bucket{handler="/api/v1/label/:name/values",le="1e+07"} 616
+prometheus_http_response_size_bytes_bucket{handler="/api/v1/label/:name/values",le="1e+08"} 616
+prometheus_http_response_size_bytes_bucket{handler="/api/v1/label/:name/values",le="1e+09"} 616
+prometheus_http_response_size_bytes_bucket{handler="/api/v1/label/:name/values",le="+Inf"} 616
+prometheus_http_response_size_bytes_sum{handler="/api/v1/label/:name/values"} 2.223305e+06
+prometheus_http_response_size_bytes_count{handler="/api/v1/label/:name/values"} 616
+prometheus_http_response_size_bytes_bucket{handler="/api/v1/labels",le="100"} 0
+prometheus_http_response_size_bytes_bucket{handler="/api/v1/labels",le="1000"} 56
+prometheus_http_response_size_bytes_bucket{handler="/api/v1/labels",le="10000"} 56
+prometheus_http_response_size_bytes_bucket{handler="/api/v1/labels",le="100000"} 56
+prometheus_http_response_size_bytes_bucket{handler="/api/v1/labels",le="1e+06"} 56
+prometheus_http_response_size_bytes_bucket{handler="/api/v1/labels",le="1e+07"} 56
+prometheus_http_response_size_bytes_bucket{handler="/api/v1/labels",le="1e+08"} 56
+prometheus_http_response_size_bytes_bucket{handler="/api/v1/labels",le="1e+09"} 56
+prometheus_http_response_size_bytes_bucket{handler="/api/v1/labels",le="+Inf"} 56
+prometheus_http_response_size_bytes_sum{handler="/api/v1/labels"} 27624
+prometheus_http_response_size_bytes_count{handler="/api/v1/labels"} 56
+prometheus_http_response_size_bytes_bucket{handler="/api/v1/query",le="100"} 1.225414e+06
+prometheus_http_response_size_bytes_bucket{handler="/api/v1/query",le="1000"} 1.292181e+06
+prometheus_http_response_size_bytes_bucket{handler="/api/v1/query",le="10000"} 1.578593e+06
+prometheus_http_response_size_bytes_bucket{handler="/api/v1/query",le="100000"} 1.640268e+06
+prometheus_http_response_size_bytes_bucket{handler="/api/v1/query",le="1e+06"} 1.645818e+06
+prometheus_http_response_size_bytes_bucket{handler="/api/v1/query",le="1e+07"} 1.645818e+06
+prometheus_http_response_size_bytes_bucket{handler="/api/v1/query",le="1e+08"} 1.645818e+06
+prometheus_http_response_size_bytes_bucket{handler="/api/v1/query",le="1e+09"} 1.645818e+06
+prometheus_http_response_size_bytes_bucket{handler="/api/v1/query",le="+Inf"} 1.645818e+06
+prometheus_http_response_size_bytes_sum{handler="/api/v1/query"} 4.499521887e+09
+prometheus_http_response_size_bytes_count{handler="/api/v1/query"} 1.645818e+06
+prometheus_http_response_size_bytes_bucket{handler="/api/v1/query_range",le="100"} 7414
+prometheus_http_response_size_bytes_bucket{handler="/api/v1/query_range",le="1000"} 48479
+prometheus_http_response_size_bytes_bucket{handler="/api/v1/query_range",le="10000"} 89879
+prometheus_http_response_size_bytes_bucket{handler="/api/v1/query_range",le="100000"} 91294
+prometheus_http_response_size_bytes_bucket{handler="/api/v1/query_range",le="1e+06"} 91436
+prometheus_http_response_size_bytes_bucket{handler="/api/v1/query_range",le="1e+07"} 91439
+prometheus_http_response_size_bytes_bucket{handler="/api/v1/query_range",le="1e+08"} 91439
+prometheus_http_response_size_bytes_bucket{handler="/api/v1/query_range",le="1e+09"} 91439
+prometheus_http_response_size_bytes_bucket{handler="/api/v1/query_range",le="+Inf"} 91439
+prometheus_http_response_size_bytes_sum{handler="/api/v1/query_range"} 2.20397291e+08
+prometheus_http_response_size_bytes_count{handler="/api/v1/query_range"} 91439
+prometheus_http_response_size_bytes_bucket{handler="/api/v1/series",le="100"} 12
+prometheus_http_response_size_bytes_bucket{handler="/api/v1/series",le="1000"} 7440
+prometheus_http_response_size_bytes_bucket{handler="/api/v1/series",le="10000"} 11306
+prometheus_http_response_size_bytes_bucket{handler="/api/v1/series",le="100000"} 11398
+prometheus_http_response_size_bytes_bucket{handler="/api/v1/series",le="1e+06"} 11420
+prometheus_http_response_size_bytes_bucket{handler="/api/v1/series",le="1e+07"} 11456
+prometheus_http_response_size_bytes_bucket{handler="/api/v1/series",le="1e+08"} 11456
+prometheus_http_response_size_bytes_bucket{handler="/api/v1/series",le="1e+09"} 11456
+prometheus_http_response_size_bytes_bucket{handler="/api/v1/series",le="+Inf"} 11456
+prometheus_http_response_size_bytes_sum{handler="/api/v1/series"} 6.8415822e+07
+prometheus_http_response_size_bytes_count{handler="/api/v1/series"} 11456
+prometheus_http_response_size_bytes_bucket{handler="/config",le="100"} 0
+prometheus_http_response_size_bytes_bucket{handler="/config",le="1000"} 0
+prometheus_http_response_size_bytes_bucket{handler="/config",le="10000"} 0
+prometheus_http_response_size_bytes_bucket{handler="/config",le="100000"} 1
+prometheus_http_response_size_bytes_bucket{handler="/config",le="1e+06"} 1
+prometheus_http_response_size_bytes_bucket{handler="/config",le="1e+07"} 1
+prometheus_http_response_size_bytes_bucket{handler="/config",le="1e+08"} 1
+prometheus_http_response_size_bytes_bucket{handler="/config",le="1e+09"} 1
+prometheus_http_response_size_bytes_bucket{handler="/config",le="+Inf"} 1
+prometheus_http_response_size_bytes_sum{handler="/config"} 17755
+prometheus_http_response_size_bytes_count{handler="/config"} 1
+prometheus_http_response_size_bytes_bucket{handler="/flags",le="100"} 0
+prometheus_http_response_size_bytes_bucket{handler="/flags",le="1000"} 0
+prometheus_http_response_size_bytes_bucket{handler="/flags",le="10000"} 1
+prometheus_http_response_size_bytes_bucket{handler="/flags",le="100000"} 1
+prometheus_http_response_size_bytes_bucket{handler="/flags",le="1e+06"} 1
+prometheus_http_response_size_bytes_bucket{handler="/flags",le="1e+07"} 1
+prometheus_http_response_size_bytes_bucket{handler="/flags",le="1e+08"} 1
+prometheus_http_response_size_bytes_bucket{handler="/flags",le="1e+09"} 1
+prometheus_http_response_size_bytes_bucket{handler="/flags",le="+Inf"} 1
+prometheus_http_response_size_bytes_sum{handler="/flags"} 8006
+prometheus_http_response_size_bytes_count{handler="/flags"} 1
+prometheus_http_response_size_bytes_bucket{handler="/graph",le="100"} 0
+prometheus_http_response_size_bytes_bucket{handler="/graph",le="1000"} 0
+prometheus_http_response_size_bytes_bucket{handler="/graph",le="10000"} 29
+prometheus_http_response_size_bytes_bucket{handler="/graph",le="100000"} 29
+prometheus_http_response_size_bytes_bucket{handler="/graph",le="1e+06"} 29
+prometheus_http_response_size_bytes_bucket{handler="/graph",le="1e+07"} 29
+prometheus_http_response_size_bytes_bucket{handler="/graph",le="1e+08"} 29
+prometheus_http_response_size_bytes_bucket{handler="/graph",le="1e+09"} 29
+prometheus_http_response_size_bytes_bucket{handler="/graph",le="+Inf"} 29
+prometheus_http_response_size_bytes_sum{handler="/graph"} 167765
+prometheus_http_response_size_bytes_count{handler="/graph"} 29
+prometheus_http_response_size_bytes_bucket{handler="/metrics",le="100"} 0
+prometheus_http_response_size_bytes_bucket{handler="/metrics",le="1000"} 0
+prometheus_http_response_size_bytes_bucket{handler="/metrics",le="10000"} 517175
+prometheus_http_response_size_bytes_bucket{handler="/metrics",le="100000"} 788274
+prometheus_http_response_size_bytes_bucket{handler="/metrics",le="1e+06"} 788274
+prometheus_http_response_size_bytes_bucket{handler="/metrics",le="1e+07"} 788274
+prometheus_http_response_size_bytes_bucket{handler="/metrics",le="1e+08"} 788274
+prometheus_http_response_size_bytes_bucket{handler="/metrics",le="1e+09"} 788274
+prometheus_http_response_size_bytes_bucket{handler="/metrics",le="+Inf"} 788274
+prometheus_http_response_size_bytes_sum{handler="/metrics"} 7.787844026e+09
+prometheus_http_response_size_bytes_count{handler="/metrics"} 788274
+prometheus_http_response_size_bytes_bucket{handler="/rules",le="100"} 0
+prometheus_http_response_size_bytes_bucket{handler="/rules",le="1000"} 0
+prometheus_http_response_size_bytes_bucket{handler="/rules",le="10000"} 1
+prometheus_http_response_size_bytes_bucket{handler="/rules",le="100000"} 1
+prometheus_http_response_size_bytes_bucket{handler="/rules",le="1e+06"} 1
+prometheus_http_response_size_bytes_bucket{handler="/rules",le="1e+07"} 1
+prometheus_http_response_size_bytes_bucket{handler="/rules",le="1e+08"} 1
+prometheus_http_response_size_bytes_bucket{handler="/rules",le="1e+09"} 1
+prometheus_http_response_size_bytes_bucket{handler="/rules",le="+Inf"} 1
+prometheus_http_response_size_bytes_sum{handler="/rules"} 3899
+prometheus_http_response_size_bytes_count{handler="/rules"} 1
+prometheus_http_response_size_bytes_bucket{handler="/service-discovery",le="100"} 0
+prometheus_http_response_size_bytes_bucket{handler="/service-discovery",le="1000"} 0
+prometheus_http_response_size_bytes_bucket{handler="/service-discovery",le="10000"} 0
+prometheus_http_response_size_bytes_bucket{handler="/service-discovery",le="100000"} 0
+prometheus_http_response_size_bytes_bucket{handler="/service-discovery",le="1e+06"} 2
+prometheus_http_response_size_bytes_bucket{handler="/service-discovery",le="1e+07"} 2
+prometheus_http_response_size_bytes_bucket{handler="/service-discovery",le="1e+08"} 2
+prometheus_http_response_size_bytes_bucket{handler="/service-discovery",le="1e+09"} 2
+prometheus_http_response_size_bytes_bucket{handler="/service-discovery",le="+Inf"} 2
+prometheus_http_response_size_bytes_sum{handler="/service-discovery"} 795968
+prometheus_http_response_size_bytes_count{handler="/service-discovery"} 2
+prometheus_http_response_size_bytes_bucket{handler="/static/*filepath",le="100"} 0
+prometheus_http_response_size_bytes_bucket{handler="/static/*filepath",le="1000"} 23
+prometheus_http_response_size_bytes_bucket{handler="/static/*filepath",le="10000"} 202
+prometheus_http_response_size_bytes_bucket{handler="/static/*filepath",le="100000"} 323
+prometheus_http_response_size_bytes_bucket{handler="/static/*filepath",le="1e+06"} 350
+prometheus_http_response_size_bytes_bucket{handler="/static/*filepath",le="1e+07"} 350
+prometheus_http_response_size_bytes_bucket{handler="/static/*filepath",le="1e+08"} 350
+prometheus_http_response_size_bytes_bucket{handler="/static/*filepath",le="1e+09"} 350
+prometheus_http_response_size_bytes_bucket{handler="/static/*filepath",le="+Inf"} 350
+prometheus_http_response_size_bytes_sum{handler="/static/*filepath"} 9.775806e+06
+prometheus_http_response_size_bytes_count{handler="/static/*filepath"} 350
+prometheus_http_response_size_bytes_bucket{handler="/status",le="100"} 0
+prometheus_http_response_size_bytes_bucket{handler="/status",le="1000"} 0
+prometheus_http_response_size_bytes_bucket{handler="/status",le="10000"} 1
+prometheus_http_response_size_bytes_bucket{handler="/status",le="100000"} 1
+prometheus_http_response_size_bytes_bucket{handler="/status",le="1e+06"} 1
+prometheus_http_response_size_bytes_bucket{handler="/status",le="1e+07"} 1
+prometheus_http_response_size_bytes_bucket{handler="/status",le="1e+08"} 1
+prometheus_http_response_size_bytes_bucket{handler="/status",le="1e+09"} 1
+prometheus_http_response_size_bytes_bucket{handler="/status",le="+Inf"} 1
+prometheus_http_response_size_bytes_sum{handler="/status"} 5855
+prometheus_http_response_size_bytes_count{handler="/status"} 1
+prometheus_http_response_size_bytes_bucket{handler="/targets",le="100"} 0
+prometheus_http_response_size_bytes_bucket{handler="/targets",le="1000"} 0
+prometheus_http_response_size_bytes_bucket{handler="/targets",le="10000"} 0
+prometheus_http_response_size_bytes_bucket{handler="/targets",le="100000"} 0
+prometheus_http_response_size_bytes_bucket{handler="/targets",le="1e+06"} 3
+prometheus_http_response_size_bytes_bucket{handler="/targets",le="1e+07"} 3
+prometheus_http_response_size_bytes_bucket{handler="/targets",le="1e+08"} 3
+prometheus_http_response_size_bytes_bucket{handler="/targets",le="1e+09"} 3
+prometheus_http_response_size_bytes_bucket{handler="/targets",le="+Inf"} 3
+prometheus_http_response_size_bytes_sum{handler="/targets"} 1.249e+06
+prometheus_http_response_size_bytes_count{handler="/targets"} 3
+# HELP prometheus_notifications_alertmanagers_discovered The number of alertmanagers discovered and active.
+# TYPE prometheus_notifications_alertmanagers_discovered gauge
+prometheus_notifications_alertmanagers_discovered 0
+# HELP prometheus_notifications_dropped_total Total number of alerts dropped due to errors when sending to Alertmanager.
+# TYPE prometheus_notifications_dropped_total counter
+prometheus_notifications_dropped_total 0
+# HELP prometheus_notifications_queue_capacity The capacity of the alert notifications queue.
+# TYPE prometheus_notifications_queue_capacity gauge
+prometheus_notifications_queue_capacity 10000
+# HELP prometheus_notifications_queue_length The number of alert notifications in the queue.
+# TYPE prometheus_notifications_queue_length gauge
+prometheus_notifications_queue_length 0
+# HELP prometheus_remote_storage_highest_timestamp_in_seconds Highest timestamp that has come into the remote storage via the Appender interface, in seconds since epoch.
+# TYPE prometheus_remote_storage_highest_timestamp_in_seconds gauge
+prometheus_remote_storage_highest_timestamp_in_seconds 1.737457637e+09
+# HELP prometheus_remote_storage_samples_in_total Samples in to remote storage, compare to samples out for queue managers.
+# TYPE prometheus_remote_storage_samples_in_total counter
+prometheus_remote_storage_samples_in_total 4.189403861e+10
+# HELP prometheus_rule_evaluation_duration_seconds The duration for a rule to execute.
+# TYPE prometheus_rule_evaluation_duration_seconds summary
+prometheus_rule_evaluation_duration_seconds{quantile="0.5"} NaN
+prometheus_rule_evaluation_duration_seconds{quantile="0.9"} NaN
+prometheus_rule_evaluation_duration_seconds{quantile="0.99"} NaN
+prometheus_rule_evaluation_duration_seconds_sum 0
+prometheus_rule_evaluation_duration_seconds_count 0
+# HELP prometheus_rule_evaluation_failures_total The total number of rule evaluation failures.
+# TYPE prometheus_rule_evaluation_failures_total counter
+prometheus_rule_evaluation_failures_total 0
+# HELP prometheus_rule_evaluations_total The total number of rule evaluations.
+# TYPE prometheus_rule_evaluations_total counter
+prometheus_rule_evaluations_total 0
+# HELP prometheus_rule_group_duration_seconds The duration of rule group evaluations.
+# TYPE prometheus_rule_group_duration_seconds summary
+prometheus_rule_group_duration_seconds{quantile="0.01"} NaN
+prometheus_rule_group_duration_seconds{quantile="0.05"} NaN
+prometheus_rule_group_duration_seconds{quantile="0.5"} NaN
+prometheus_rule_group_duration_seconds{quantile="0.9"} NaN
+prometheus_rule_group_duration_seconds{quantile="0.99"} NaN
+prometheus_rule_group_duration_seconds_sum 0
+prometheus_rule_group_duration_seconds_count 0
+# HELP prometheus_rule_group_iterations_missed_total The total number of rule group evaluations missed due to slow rule group evaluation.
+# TYPE prometheus_rule_group_iterations_missed_total counter
+prometheus_rule_group_iterations_missed_total 1
+# HELP prometheus_rule_group_iterations_total The total number of scheduled rule group evaluations, whether executed or missed.
+# TYPE prometheus_rule_group_iterations_total counter
+prometheus_rule_group_iterations_total 0
+# HELP prometheus_sd_consul_rpc_duration_seconds The duration of a Consul RPC call in seconds.
+# TYPE prometheus_sd_consul_rpc_duration_seconds summary
+prometheus_sd_consul_rpc_duration_seconds{call="service",endpoint="catalog",quantile="0.5"} NaN
+prometheus_sd_consul_rpc_duration_seconds{call="service",endpoint="catalog",quantile="0.9"} NaN
+prometheus_sd_consul_rpc_duration_seconds{call="service",endpoint="catalog",quantile="0.99"} NaN
+prometheus_sd_consul_rpc_duration_seconds_sum{call="service",endpoint="catalog"} 0
+prometheus_sd_consul_rpc_duration_seconds_count{call="service",endpoint="catalog"} 0
+prometheus_sd_consul_rpc_duration_seconds{call="services",endpoint="catalog",quantile="0.5"} NaN
+prometheus_sd_consul_rpc_duration_seconds{call="services",endpoint="catalog",quantile="0.9"} NaN
+prometheus_sd_consul_rpc_duration_seconds{call="services",endpoint="catalog",quantile="0.99"} NaN
+prometheus_sd_consul_rpc_duration_seconds_sum{call="services",endpoint="catalog"} 0
+prometheus_sd_consul_rpc_duration_seconds_count{call="services",endpoint="catalog"} 0
+# HELP prometheus_sd_consul_rpc_failures_total The number of Consul RPC call failures.
+# TYPE prometheus_sd_consul_rpc_failures_total counter
+prometheus_sd_consul_rpc_failures_total 0
+# HELP prometheus_sd_discovered_targets Current number of discovered targets.
+# TYPE prometheus_sd_discovered_targets gauge
+prometheus_sd_discovered_targets{config="defc8654e1f8780ce80f9010266ce592",name="notify"} 0
+prometheus_sd_discovered_targets{config="node_248",name="scrape"} 28
+prometheus_sd_discovered_targets{config="node_371",name="scrape"} 17
+prometheus_sd_discovered_targets{config="node_515",name="scrape"} 21
+prometheus_sd_discovered_targets{config="node_574",name="scrape"} 26
+prometheus_sd_discovered_targets{config="node_604",name="scrape"} 18
+prometheus_sd_discovered_targets{config="node_642",name="scrape"} 15
+prometheus_sd_discovered_targets{config="node_704",name="scrape"} 9
+prometheus_sd_discovered_targets{config="node_735",name="scrape"} 15
+prometheus_sd_discovered_targets{config="node_758",name="scrape"} 28
+prometheus_sd_discovered_targets{config="node_angel",name="scrape"} 1
+prometheus_sd_discovered_targets{config="node_localhost",name="scrape"} 1
+prometheus_sd_discovered_targets{config="node_mz0",name="scrape"} 17
+prometheus_sd_discovered_targets{config="node_mz1",name="scrape"} 25
+prometheus_sd_discovered_targets{config="node_mz2",name="scrape"} 25
+prometheus_sd_discovered_targets{config="node_mz3",name="scrape"} 25
+prometheus_sd_discovered_targets{config="node_mz4",name="scrape"} 24
+prometheus_sd_discovered_targets{config="prometheus",name="scrape"} 1
+prometheus_sd_discovered_targets{config="test-vms",name="scrape"} 1
+# HELP prometheus_sd_dns_lookup_failures_total The number of DNS-SD lookup failures.
+# TYPE prometheus_sd_dns_lookup_failures_total counter
+prometheus_sd_dns_lookup_failures_total 0
+# HELP prometheus_sd_dns_lookups_total The number of DNS-SD lookups.
+# TYPE prometheus_sd_dns_lookups_total counter
+prometheus_sd_dns_lookups_total 0
+# HELP prometheus_sd_file_read_errors_total The number of File-SD read errors.
+# TYPE prometheus_sd_file_read_errors_total counter
+prometheus_sd_file_read_errors_total 0
+# HELP prometheus_sd_file_scan_duration_seconds The duration of the File-SD scan in seconds.
+# TYPE prometheus_sd_file_scan_duration_seconds summary
+prometheus_sd_file_scan_duration_seconds{quantile="0.5"} NaN
+prometheus_sd_file_scan_duration_seconds{quantile="0.9"} NaN
+prometheus_sd_file_scan_duration_seconds{quantile="0.99"} NaN
+prometheus_sd_file_scan_duration_seconds_sum 0
+prometheus_sd_file_scan_duration_seconds_count 0
+# HELP prometheus_sd_kubernetes_cache_last_resource_version Last resource version from the Kubernetes API.
+# TYPE prometheus_sd_kubernetes_cache_last_resource_version gauge
+prometheus_sd_kubernetes_cache_last_resource_version 0
+# HELP prometheus_sd_kubernetes_cache_list_duration_seconds Duration of a Kubernetes API call in seconds.
+# TYPE prometheus_sd_kubernetes_cache_list_duration_seconds summary
+prometheus_sd_kubernetes_cache_list_duration_seconds_sum 0
+prometheus_sd_kubernetes_cache_list_duration_seconds_count 0
+# HELP prometheus_sd_kubernetes_cache_list_items Count of items in a list from the Kubernetes API.
+# TYPE prometheus_sd_kubernetes_cache_list_items summary
+prometheus_sd_kubernetes_cache_list_items_sum 0
+prometheus_sd_kubernetes_cache_list_items_count 0
+# HELP prometheus_sd_kubernetes_cache_list_total Total number of list operations.
+# TYPE prometheus_sd_kubernetes_cache_list_total counter
+prometheus_sd_kubernetes_cache_list_total 0
+# HELP prometheus_sd_kubernetes_cache_short_watches_total Total number of short watch operations.
+# TYPE prometheus_sd_kubernetes_cache_short_watches_total counter
+prometheus_sd_kubernetes_cache_short_watches_total 0
+# HELP prometheus_sd_kubernetes_cache_watch_duration_seconds Duration of watches on the Kubernetes API.
+# TYPE prometheus_sd_kubernetes_cache_watch_duration_seconds summary
+prometheus_sd_kubernetes_cache_watch_duration_seconds_sum 0
+prometheus_sd_kubernetes_cache_watch_duration_seconds_count 0
+# HELP prometheus_sd_kubernetes_cache_watch_events Number of items in watches on the Kubernetes API.
+# TYPE prometheus_sd_kubernetes_cache_watch_events summary
+prometheus_sd_kubernetes_cache_watch_events_sum 0
+prometheus_sd_kubernetes_cache_watch_events_count 0
+# HELP prometheus_sd_kubernetes_cache_watches_total Total number of watch operations.
+# TYPE prometheus_sd_kubernetes_cache_watches_total counter
+prometheus_sd_kubernetes_cache_watches_total 0
+# HELP prometheus_sd_kubernetes_events_total The number of Kubernetes events handled.
+# TYPE prometheus_sd_kubernetes_events_total counter
+prometheus_sd_kubernetes_events_total{event="add",role="endpoints"} 0
+prometheus_sd_kubernetes_events_total{event="add",role="ingress"} 0
+prometheus_sd_kubernetes_events_total{event="add",role="node"} 0
+prometheus_sd_kubernetes_events_total{event="add",role="pod"} 0
+prometheus_sd_kubernetes_events_total{event="add",role="service"} 0
+prometheus_sd_kubernetes_events_total{event="delete",role="endpoints"} 0
+prometheus_sd_kubernetes_events_total{event="delete",role="ingress"} 0
+prometheus_sd_kubernetes_events_total{event="delete",role="node"} 0
+prometheus_sd_kubernetes_events_total{event="delete",role="pod"} 0
+prometheus_sd_kubernetes_events_total{event="delete",role="service"} 0
+prometheus_sd_kubernetes_events_total{event="update",role="endpoints"} 0
+prometheus_sd_kubernetes_events_total{event="update",role="ingress"} 0
+prometheus_sd_kubernetes_events_total{event="update",role="node"} 0
+prometheus_sd_kubernetes_events_total{event="update",role="pod"} 0
+prometheus_sd_kubernetes_events_total{event="update",role="service"} 0
+# HELP prometheus_sd_received_updates_total Total number of update events received from the SD providers.
+# TYPE prometheus_sd_received_updates_total counter
+prometheus_sd_received_updates_total{name="notify"} 2
+prometheus_sd_received_updates_total{name="scrape"} 36
+# HELP prometheus_sd_updates_total Total number of update events sent to the SD consumers.
+# TYPE prometheus_sd_updates_total counter
+prometheus_sd_updates_total{name="notify"} 1
+prometheus_sd_updates_total{name="scrape"} 1
+# HELP prometheus_target_interval_length_seconds Actual intervals between scrapes.
+# TYPE prometheus_target_interval_length_seconds summary
+prometheus_target_interval_length_seconds{interval="15s",quantile="0.01"} 14.999197299
+prometheus_target_interval_length_seconds{interval="15s",quantile="0.05"} 14.999830758
+prometheus_target_interval_length_seconds{interval="15s",quantile="0.5"} 15.00002338
+prometheus_target_interval_length_seconds{interval="15s",quantile="0.9"} 15.000133426
+prometheus_target_interval_length_seconds{interval="15s",quantile="0.99"} 15.000903978
+prometheus_target_interval_length_seconds_sum{interval="15s"} 3.33439144562801e+09
+prometheus_target_interval_length_seconds_count{interval="15s"} 2.22292528e+08
+# HELP prometheus_target_scrape_pool_reloads_failed_total Total number of failed scrape loop reloads.
+# TYPE prometheus_target_scrape_pool_reloads_failed_total counter
+prometheus_target_scrape_pool_reloads_failed_total 0
+# HELP prometheus_target_scrape_pool_reloads_total Total number of scrape loop reloads.
+# TYPE prometheus_target_scrape_pool_reloads_total counter
+prometheus_target_scrape_pool_reloads_total 0
+# HELP prometheus_target_scrape_pool_sync_total Total number of syncs that were executed on a scrape pool.
+# TYPE prometheus_target_scrape_pool_sync_total counter
+prometheus_target_scrape_pool_sync_total{scrape_job="node_248"} 1
+prometheus_target_scrape_pool_sync_total{scrape_job="node_371"} 1
+prometheus_target_scrape_pool_sync_total{scrape_job="node_515"} 1
+prometheus_target_scrape_pool_sync_total{scrape_job="node_574"} 1
+prometheus_target_scrape_pool_sync_total{scrape_job="node_604"} 1
+prometheus_target_scrape_pool_sync_total{scrape_job="node_642"} 1
+prometheus_target_scrape_pool_sync_total{scrape_job="node_704"} 1
+prometheus_target_scrape_pool_sync_total{scrape_job="node_735"} 1
+prometheus_target_scrape_pool_sync_total{scrape_job="node_758"} 1
+prometheus_target_scrape_pool_sync_total{scrape_job="node_angel"} 1
+prometheus_target_scrape_pool_sync_total{scrape_job="node_localhost"} 1
+prometheus_target_scrape_pool_sync_total{scrape_job="node_mz0"} 1
+prometheus_target_scrape_pool_sync_total{scrape_job="node_mz1"} 1
+prometheus_target_scrape_pool_sync_total{scrape_job="node_mz2"} 1
+prometheus_target_scrape_pool_sync_total{scrape_job="node_mz3"} 1
+prometheus_target_scrape_pool_sync_total{scrape_job="node_mz4"} 1
+prometheus_target_scrape_pool_sync_total{scrape_job="prometheus"} 1
+prometheus_target_scrape_pool_sync_total{scrape_job="test-vms"} 1
+# HELP prometheus_target_scrape_pools_failed_total Total number of scrape pool creations that failed.
+# TYPE prometheus_target_scrape_pools_failed_total counter
+prometheus_target_scrape_pools_failed_total 0
+# HELP prometheus_target_scrape_pools_total Total number of scrape pool creation atttempts.
+# TYPE prometheus_target_scrape_pools_total counter
+prometheus_target_scrape_pools_total 18
+# HELP prometheus_target_scrapes_cache_flush_forced_total How many times a scrape cache was flushed due to getting big while scrapes are failing.
+# TYPE prometheus_target_scrapes_cache_flush_forced_total counter
+prometheus_target_scrapes_cache_flush_forced_total 0
+# HELP prometheus_target_scrapes_exceeded_sample_limit_total Total number of scrapes that hit the sample limit and were rejected.
+# TYPE prometheus_target_scrapes_exceeded_sample_limit_total counter
+prometheus_target_scrapes_exceeded_sample_limit_total 0
+# HELP prometheus_target_scrapes_sample_duplicate_timestamp_total Total number of samples rejected due to duplicate timestamps but different values
+# TYPE prometheus_target_scrapes_sample_duplicate_timestamp_total counter
+prometheus_target_scrapes_sample_duplicate_timestamp_total 0
+# HELP prometheus_target_scrapes_sample_out_of_bounds_total Total number of samples rejected due to timestamp falling outside of the time bounds
+# TYPE prometheus_target_scrapes_sample_out_of_bounds_total counter
+prometheus_target_scrapes_sample_out_of_bounds_total 0
+# HELP prometheus_target_scrapes_sample_out_of_order_total Total number of samples rejected due to not being out of the expected order
+# TYPE prometheus_target_scrapes_sample_out_of_order_total counter
+prometheus_target_scrapes_sample_out_of_order_total 0
+# HELP prometheus_target_sync_length_seconds Actual interval to sync the scrape pool.
+# TYPE prometheus_target_sync_length_seconds summary
+prometheus_target_sync_length_seconds{scrape_job="node_248",quantile="0.01"} NaN
+prometheus_target_sync_length_seconds{scrape_job="node_248",quantile="0.05"} NaN
+prometheus_target_sync_length_seconds{scrape_job="node_248",quantile="0.5"} NaN
+prometheus_target_sync_length_seconds{scrape_job="node_248",quantile="0.9"} NaN
+prometheus_target_sync_length_seconds{scrape_job="node_248",quantile="0.99"} NaN
+prometheus_target_sync_length_seconds_sum{scrape_job="node_248"} 0.000329998
+prometheus_target_sync_length_seconds_count{scrape_job="node_248"} 1
+prometheus_target_sync_length_seconds{scrape_job="node_371",quantile="0.01"} NaN
+prometheus_target_sync_length_seconds{scrape_job="node_371",quantile="0.05"} NaN
+prometheus_target_sync_length_seconds{scrape_job="node_371",quantile="0.5"} NaN
+prometheus_target_sync_length_seconds{scrape_job="node_371",quantile="0.9"} NaN
+prometheus_target_sync_length_seconds{scrape_job="node_371",quantile="0.99"} NaN
+prometheus_target_sync_length_seconds_sum{scrape_job="node_371"} 0.00024691
+prometheus_target_sync_length_seconds_count{scrape_job="node_371"} 1
+prometheus_target_sync_length_seconds{scrape_job="node_515",quantile="0.01"} NaN
+prometheus_target_sync_length_seconds{scrape_job="node_515",quantile="0.05"} NaN
+prometheus_target_sync_length_seconds{scrape_job="node_515",quantile="0.5"} NaN
+prometheus_target_sync_length_seconds{scrape_job="node_515",quantile="0.9"} NaN
+prometheus_target_sync_length_seconds{scrape_job="node_515",quantile="0.99"} NaN
+prometheus_target_sync_length_seconds_sum{scrape_job="node_515"} 0.000488842
+prometheus_target_sync_length_seconds_count{scrape_job="node_515"} 1
+prometheus_target_sync_length_seconds{scrape_job="node_574",quantile="0.01"} NaN
+prometheus_target_sync_length_seconds{scrape_job="node_574",quantile="0.05"} NaN
+prometheus_target_sync_length_seconds{scrape_job="node_574",quantile="0.5"} NaN
+prometheus_target_sync_length_seconds{scrape_job="node_574",quantile="0.9"} NaN
+prometheus_target_sync_length_seconds{scrape_job="node_574",quantile="0.99"} NaN
+prometheus_target_sync_length_seconds_sum{scrape_job="node_574"} 0.000379688
+prometheus_target_sync_length_seconds_count{scrape_job="node_574"} 1
+prometheus_target_sync_length_seconds{scrape_job="node_604",quantile="0.01"} NaN
+prometheus_target_sync_length_seconds{scrape_job="node_604",quantile="0.05"} NaN
+prometheus_target_sync_length_seconds{scrape_job="node_604",quantile="0.5"} NaN
+prometheus_target_sync_length_seconds{scrape_job="node_604",quantile="0.9"} NaN
+prometheus_target_sync_length_seconds{scrape_job="node_604",quantile="0.99"} NaN
+prometheus_target_sync_length_seconds_sum{scrape_job="node_604"} 0.000331872
+prometheus_target_sync_length_seconds_count{scrape_job="node_604"} 1
+prometheus_target_sync_length_seconds{scrape_job="node_642",quantile="0.01"} NaN
+prometheus_target_sync_length_seconds{scrape_job="node_642",quantile="0.05"} NaN
+prometheus_target_sync_length_seconds{scrape_job="node_642",quantile="0.5"} NaN
+prometheus_target_sync_length_seconds{scrape_job="node_642",quantile="0.9"} NaN
+prometheus_target_sync_length_seconds{scrape_job="node_642",quantile="0.99"} NaN
+prometheus_target_sync_length_seconds_sum{scrape_job="node_642"} 0.000227275
+prometheus_target_sync_length_seconds_count{scrape_job="node_642"} 1
+prometheus_target_sync_length_seconds{scrape_job="node_704",quantile="0.01"} NaN
+prometheus_target_sync_length_seconds{scrape_job="node_704",quantile="0.05"} NaN
+prometheus_target_sync_length_seconds{scrape_job="node_704",quantile="0.5"} NaN
+prometheus_target_sync_length_seconds{scrape_job="node_704",quantile="0.9"} NaN
+prometheus_target_sync_length_seconds{scrape_job="node_704",quantile="0.99"} NaN
+prometheus_target_sync_length_seconds_sum{scrape_job="node_704"} 0.000192752
+prometheus_target_sync_length_seconds_count{scrape_job="node_704"} 1
+prometheus_target_sync_length_seconds{scrape_job="node_735",quantile="0.01"} NaN
+prometheus_target_sync_length_seconds{scrape_job="node_735",quantile="0.05"} NaN
+prometheus_target_sync_length_seconds{scrape_job="node_735",quantile="0.5"} NaN
+prometheus_target_sync_length_seconds{scrape_job="node_735",quantile="0.9"} NaN
+prometheus_target_sync_length_seconds{scrape_job="node_735",quantile="0.99"} NaN
+prometheus_target_sync_length_seconds_sum{scrape_job="node_735"} 0.000190202
+prometheus_target_sync_length_seconds_count{scrape_job="node_735"} 1
+prometheus_target_sync_length_seconds{scrape_job="node_758",quantile="0.01"} NaN
+prometheus_target_sync_length_seconds{scrape_job="node_758",quantile="0.05"} NaN
+prometheus_target_sync_length_seconds{scrape_job="node_758",quantile="0.5"} NaN
+prometheus_target_sync_length_seconds{scrape_job="node_758",quantile="0.9"} NaN
+prometheus_target_sync_length_seconds{scrape_job="node_758",quantile="0.99"} NaN
+prometheus_target_sync_length_seconds_sum{scrape_job="node_758"} 0.002760356
+prometheus_target_sync_length_seconds_count{scrape_job="node_758"} 1
+prometheus_target_sync_length_seconds{scrape_job="node_angel",quantile="0.01"} NaN
+prometheus_target_sync_length_seconds{scrape_job="node_angel",quantile="0.05"} NaN
+prometheus_target_sync_length_seconds{scrape_job="node_angel",quantile="0.5"} NaN
+prometheus_target_sync_length_seconds{scrape_job="node_angel",quantile="0.9"} NaN
+prometheus_target_sync_length_seconds{scrape_job="node_angel",quantile="0.99"} NaN
+prometheus_target_sync_length_seconds_sum{scrape_job="node_angel"} 9.1348e-05
+prometheus_target_sync_length_seconds_count{scrape_job="node_angel"} 1
+prometheus_target_sync_length_seconds{scrape_job="node_localhost",quantile="0.01"} NaN
+prometheus_target_sync_length_seconds{scrape_job="node_localhost",quantile="0.05"} NaN
+prometheus_target_sync_length_seconds{scrape_job="node_localhost",quantile="0.5"} NaN
+prometheus_target_sync_length_seconds{scrape_job="node_localhost",quantile="0.9"} NaN
+prometheus_target_sync_length_seconds{scrape_job="node_localhost",quantile="0.99"} NaN
+prometheus_target_sync_length_seconds_sum{scrape_job="node_localhost"} 6.0344e-05
+prometheus_target_sync_length_seconds_count{scrape_job="node_localhost"} 1
+prometheus_target_sync_length_seconds{scrape_job="node_mz0",quantile="0.01"} NaN
+prometheus_target_sync_length_seconds{scrape_job="node_mz0",quantile="0.05"} NaN
+prometheus_target_sync_length_seconds{scrape_job="node_mz0",quantile="0.5"} NaN
+prometheus_target_sync_length_seconds{scrape_job="node_mz0",quantile="0.9"} NaN
+prometheus_target_sync_length_seconds{scrape_job="node_mz0",quantile="0.99"} NaN
+prometheus_target_sync_length_seconds_sum{scrape_job="node_mz0"} 0.000353715
+prometheus_target_sync_length_seconds_count{scrape_job="node_mz0"} 1
+prometheus_target_sync_length_seconds{scrape_job="node_mz1",quantile="0.01"} NaN
+prometheus_target_sync_length_seconds{scrape_job="node_mz1",quantile="0.05"} NaN
+prometheus_target_sync_length_seconds{scrape_job="node_mz1",quantile="0.5"} NaN
+prometheus_target_sync_length_seconds{scrape_job="node_mz1",quantile="0.9"} NaN
+prometheus_target_sync_length_seconds{scrape_job="node_mz1",quantile="0.99"} NaN
+prometheus_target_sync_length_seconds_sum{scrape_job="node_mz1"} 0.000336378
+prometheus_target_sync_length_seconds_count{scrape_job="node_mz1"} 1
+prometheus_target_sync_length_seconds{scrape_job="node_mz2",quantile="0.01"} NaN
+prometheus_target_sync_length_seconds{scrape_job="node_mz2",quantile="0.05"} NaN
+prometheus_target_sync_length_seconds{scrape_job="node_mz2",quantile="0.5"} NaN
+prometheus_target_sync_length_seconds{scrape_job="node_mz2",quantile="0.9"} NaN
+prometheus_target_sync_length_seconds{scrape_job="node_mz2",quantile="0.99"} NaN
+prometheus_target_sync_length_seconds_sum{scrape_job="node_mz2"} 0.000322112
+prometheus_target_sync_length_seconds_count{scrape_job="node_mz2"} 1
+prometheus_target_sync_length_seconds{scrape_job="node_mz3",quantile="0.01"} NaN
+prometheus_target_sync_length_seconds{scrape_job="node_mz3",quantile="0.05"} NaN
+prometheus_target_sync_length_seconds{scrape_job="node_mz3",quantile="0.5"} NaN
+prometheus_target_sync_length_seconds{scrape_job="node_mz3",quantile="0.9"} NaN
+prometheus_target_sync_length_seconds{scrape_job="node_mz3",quantile="0.99"} NaN
+prometheus_target_sync_length_seconds_sum{scrape_job="node_mz3"} 0.000342595
+prometheus_target_sync_length_seconds_count{scrape_job="node_mz3"} 1
+prometheus_target_sync_length_seconds{scrape_job="node_mz4",quantile="0.01"} NaN
+prometheus_target_sync_length_seconds{scrape_job="node_mz4",quantile="0.05"} NaN
+prometheus_target_sync_length_seconds{scrape_job="node_mz4",quantile="0.5"} NaN
+prometheus_target_sync_length_seconds{scrape_job="node_mz4",quantile="0.9"} NaN
+prometheus_target_sync_length_seconds{scrape_job="node_mz4",quantile="0.99"} NaN
+prometheus_target_sync_length_seconds_sum{scrape_job="node_mz4"} 0.000326293
+prometheus_target_sync_length_seconds_count{scrape_job="node_mz4"} 1
+prometheus_target_sync_length_seconds{scrape_job="prometheus",quantile="0.01"} NaN
+prometheus_target_sync_length_seconds{scrape_job="prometheus",quantile="0.05"} NaN
+prometheus_target_sync_length_seconds{scrape_job="prometheus",quantile="0.5"} NaN
+prometheus_target_sync_length_seconds{scrape_job="prometheus",quantile="0.9"} NaN
+prometheus_target_sync_length_seconds{scrape_job="prometheus",quantile="0.99"} NaN
+prometheus_target_sync_length_seconds_sum{scrape_job="prometheus"} 5.9156e-05
+prometheus_target_sync_length_seconds_count{scrape_job="prometheus"} 1
+prometheus_target_sync_length_seconds{scrape_job="test-vms",quantile="0.01"} NaN
+prometheus_target_sync_length_seconds{scrape_job="test-vms",quantile="0.05"} NaN
+prometheus_target_sync_length_seconds{scrape_job="test-vms",quantile="0.5"} NaN
+prometheus_target_sync_length_seconds{scrape_job="test-vms",quantile="0.9"} NaN
+prometheus_target_sync_length_seconds{scrape_job="test-vms",quantile="0.99"} NaN
+prometheus_target_sync_length_seconds_sum{scrape_job="test-vms"} 5.7826e-05
+prometheus_target_sync_length_seconds_count{scrape_job="test-vms"} 1
+# HELP prometheus_template_text_expansion_failures_total The total number of template text expansion failures.
+# TYPE prometheus_template_text_expansion_failures_total counter
+prometheus_template_text_expansion_failures_total 0
+# HELP prometheus_template_text_expansions_total The total number of template text expansions.
+# TYPE prometheus_template_text_expansions_total counter
+prometheus_template_text_expansions_total 0
+# HELP prometheus_treecache_watcher_goroutines The current number of watcher goroutines.
+# TYPE prometheus_treecache_watcher_goroutines gauge
+prometheus_treecache_watcher_goroutines 0
+# HELP prometheus_treecache_zookeeper_failures_total The total number of ZooKeeper failures.
+# TYPE prometheus_treecache_zookeeper_failures_total counter
+prometheus_treecache_zookeeper_failures_total 0
+# HELP prometheus_tsdb_blocks_loaded Number of currently loaded data blocks
+# TYPE prometheus_tsdb_blocks_loaded gauge
+prometheus_tsdb_blocks_loaded 23
+# HELP prometheus_tsdb_checkpoint_creations_failed_total Total number of checkpoint creations that failed.
+# TYPE prometheus_tsdb_checkpoint_creations_failed_total counter
+prometheus_tsdb_checkpoint_creations_failed_total 0
+# HELP prometheus_tsdb_checkpoint_creations_total Total number of checkpoint creations attempted.
+# TYPE prometheus_tsdb_checkpoint_creations_total counter
+prometheus_tsdb_checkpoint_creations_total 1233
+# HELP prometheus_tsdb_checkpoint_deletions_failed_total Total number of checkpoint deletions that failed.
+# TYPE prometheus_tsdb_checkpoint_deletions_failed_total counter
+prometheus_tsdb_checkpoint_deletions_failed_total 0
+# HELP prometheus_tsdb_checkpoint_deletions_total Total number of checkpoint deletions attempted.
+# TYPE prometheus_tsdb_checkpoint_deletions_total counter
+prometheus_tsdb_checkpoint_deletions_total 1233
+# HELP prometheus_tsdb_compaction_chunk_range_seconds Final time range of chunks on their first compaction
+# TYPE prometheus_tsdb_compaction_chunk_range_seconds histogram
+prometheus_tsdb_compaction_chunk_range_seconds_bucket{le="100"} 119620
+prometheus_tsdb_compaction_chunk_range_seconds_bucket{le="400"} 119620
+prometheus_tsdb_compaction_chunk_range_seconds_bucket{le="1600"} 119620
+prometheus_tsdb_compaction_chunk_range_seconds_bucket{le="6400"} 119620
+prometheus_tsdb_compaction_chunk_range_seconds_bucket{le="25600"} 289428
+prometheus_tsdb_compaction_chunk_range_seconds_bucket{le="102400"} 815080
+prometheus_tsdb_compaction_chunk_range_seconds_bucket{le="409600"} 2.409012e+06
+prometheus_tsdb_compaction_chunk_range_seconds_bucket{le="1.6384e+06"} 8.701978e+06
+prometheus_tsdb_compaction_chunk_range_seconds_bucket{le="6.5536e+06"} 3.53257684e+08
+prometheus_tsdb_compaction_chunk_range_seconds_bucket{le="2.62144e+07"} 3.53409524e+08
+prometheus_tsdb_compaction_chunk_range_seconds_bucket{le="+Inf"} 3.53409524e+08
+prometheus_tsdb_compaction_chunk_range_seconds_sum 6.25630016270688e+14
+prometheus_tsdb_compaction_chunk_range_seconds_count 3.53409524e+08
+# HELP prometheus_tsdb_compaction_chunk_samples Final number of samples on their first compaction
+# TYPE prometheus_tsdb_compaction_chunk_samples histogram
+prometheus_tsdb_compaction_chunk_samples_bucket{le="4"} 530841
+prometheus_tsdb_compaction_chunk_samples_bucket{le="6"} 751273
+prometheus_tsdb_compaction_chunk_samples_bucket{le="9"} 976181
+prometheus_tsdb_compaction_chunk_samples_bucket{le="13.5"} 1.264932e+06
+prometheus_tsdb_compaction_chunk_samples_bucket{le="20.25"} 1.817487e+06
+prometheus_tsdb_compaction_chunk_samples_bucket{le="30.375"} 2.60451e+06
+prometheus_tsdb_compaction_chunk_samples_bucket{le="45.5625"} 3.752783e+06
+prometheus_tsdb_compaction_chunk_samples_bucket{le="68.34375"} 5.402398e+06
+prometheus_tsdb_compaction_chunk_samples_bucket{le="102.515625"} 8.307199e+06
+prometheus_tsdb_compaction_chunk_samples_bucket{le="153.7734375"} 3.51647891e+08
+prometheus_tsdb_compaction_chunk_samples_bucket{le="230.66015625"} 3.53321787e+08
+prometheus_tsdb_compaction_chunk_samples_bucket{le="345.990234375"} 3.5340172e+08
+prometheus_tsdb_compaction_chunk_samples_bucket{le="+Inf"} 3.53409524e+08
+prometheus_tsdb_compaction_chunk_samples_sum 4.1968070346e+10
+prometheus_tsdb_compaction_chunk_samples_count 3.53409524e+08
+# HELP prometheus_tsdb_compaction_chunk_size_bytes Final size of chunks on their first compaction
+# TYPE prometheus_tsdb_compaction_chunk_size_bytes histogram
+prometheus_tsdb_compaction_chunk_size_bytes_bucket{le="32"} 1.471489e+06
+prometheus_tsdb_compaction_chunk_size_bytes_bucket{le="48"} 7.2005082e+07
+prometheus_tsdb_compaction_chunk_size_bytes_bucket{le="72"} 1.8017001e+08
+prometheus_tsdb_compaction_chunk_size_bytes_bucket{le="108"} 2.26432811e+08
+prometheus_tsdb_compaction_chunk_size_bytes_bucket{le="162"} 2.58949486e+08
+prometheus_tsdb_compaction_chunk_size_bytes_bucket{le="243"} 3.07728348e+08
+prometheus_tsdb_compaction_chunk_size_bytes_bucket{le="364.5"} 3.23470265e+08
+prometheus_tsdb_compaction_chunk_size_bytes_bucket{le="546.75"} 3.34589069e+08
+prometheus_tsdb_compaction_chunk_size_bytes_bucket{le="820.125"} 3.42264169e+08
+prometheus_tsdb_compaction_chunk_size_bytes_bucket{le="1230.1875"} 3.53316057e+08
+prometheus_tsdb_compaction_chunk_size_bytes_bucket{le="1845.28125"} 3.53399298e+08
+prometheus_tsdb_compaction_chunk_size_bytes_bucket{le="2767.921875"} 3.53407991e+08
+prometheus_tsdb_compaction_chunk_size_bytes_bucket{le="+Inf"} 3.53409524e+08
+prometheus_tsdb_compaction_chunk_size_bytes_sum 5.3134098544e+10
+prometheus_tsdb_compaction_chunk_size_bytes_count 3.53409524e+08
+# HELP prometheus_tsdb_compaction_duration_seconds Duration of compaction runs
+# TYPE prometheus_tsdb_compaction_duration_seconds histogram
+prometheus_tsdb_compaction_duration_seconds_bucket{le="1"} 888
+prometheus_tsdb_compaction_duration_seconds_bucket{le="2"} 1674
+prometheus_tsdb_compaction_duration_seconds_bucket{le="4"} 2253
+prometheus_tsdb_compaction_duration_seconds_bucket{le="8"} 2373
+prometheus_tsdb_compaction_duration_seconds_bucket{le="16"} 2374
+prometheus_tsdb_compaction_duration_seconds_bucket{le="32"} 2374
+prometheus_tsdb_compaction_duration_seconds_bucket{le="64"} 2374
+prometheus_tsdb_compaction_duration_seconds_bucket{le="128"} 2374
+prometheus_tsdb_compaction_duration_seconds_bucket{le="256"} 2374
+prometheus_tsdb_compaction_duration_seconds_bucket{le="512"} 2374
+prometheus_tsdb_compaction_duration_seconds_bucket{le="+Inf"} 2374
+prometheus_tsdb_compaction_duration_seconds_sum 3888.1352837729996
+prometheus_tsdb_compaction_duration_seconds_count 2374
+# HELP prometheus_tsdb_compaction_populating_block Set to 1 when a block is currently being written to the disk.
+# TYPE prometheus_tsdb_compaction_populating_block gauge
+prometheus_tsdb_compaction_populating_block 0
+# HELP prometheus_tsdb_compactions_failed_total Total number of compactions that failed for the partition.
+# TYPE prometheus_tsdb_compactions_failed_total counter
+prometheus_tsdb_compactions_failed_total 0
+# HELP prometheus_tsdb_compactions_total Total number of compactions that were executed for the partition.
+# TYPE prometheus_tsdb_compactions_total counter
+prometheus_tsdb_compactions_total 2374
+# HELP prometheus_tsdb_compactions_triggered_total Total number of triggered compactions for the partition.
+# TYPE prometheus_tsdb_compactions_triggered_total counter
+prometheus_tsdb_compactions_triggered_total 198711
+# HELP prometheus_tsdb_head_active_appenders Number of currently active appender transactions
+# TYPE prometheus_tsdb_head_active_appenders gauge
+prometheus_tsdb_head_active_appenders 0
+# HELP prometheus_tsdb_head_chunks Total number of chunks in the head block.
+# TYPE prometheus_tsdb_head_chunks gauge
+prometheus_tsdb_head_chunks 52995
+# HELP prometheus_tsdb_head_chunks_created_total Total number of chunks created in the head
+# TYPE prometheus_tsdb_head_chunks_created_total counter
+prometheus_tsdb_head_chunks_created_total 3.53462519e+08
+# HELP prometheus_tsdb_head_chunks_removed_total Total number of chunks removed in the head
+# TYPE prometheus_tsdb_head_chunks_removed_total counter
+prometheus_tsdb_head_chunks_removed_total 3.53409524e+08
+# HELP prometheus_tsdb_head_gc_duration_seconds Runtime of garbage collection in the head block.
+# TYPE prometheus_tsdb_head_gc_duration_seconds summary
+prometheus_tsdb_head_gc_duration_seconds{quantile="0.5"} 0.018850182
+prometheus_tsdb_head_gc_duration_seconds{quantile="0.9"} 0.018850182
+prometheus_tsdb_head_gc_duration_seconds{quantile="0.99"} 0.018850182
+prometheus_tsdb_head_gc_duration_seconds_sum 102.93276941299995
+prometheus_tsdb_head_gc_duration_seconds_count 1643
+# HELP prometheus_tsdb_head_max_time Maximum timestamp of the head block. The unit is decided by the library consumer.
+# TYPE prometheus_tsdb_head_max_time gauge
+prometheus_tsdb_head_max_time 1.737457637084e+12
+# HELP prometheus_tsdb_head_max_time_seconds Maximum timestamp of the head block.
+# TYPE prometheus_tsdb_head_max_time_seconds gauge
+prometheus_tsdb_head_max_time_seconds 1.737457637084e+09
+# HELP prometheus_tsdb_head_min_time Minimum time bound of the head block. The unit is decided by the library consumer.
+# TYPE prometheus_tsdb_head_min_time gauge
+prometheus_tsdb_head_min_time 1.7374536e+12
+# HELP prometheus_tsdb_head_min_time_seconds Minimum time bound of the head block.
+# TYPE prometheus_tsdb_head_min_time_seconds gauge
+prometheus_tsdb_head_min_time_seconds 1.7374536e+09
+# HELP prometheus_tsdb_head_samples_appended_total Total number of appended samples.
+# TYPE prometheus_tsdb_head_samples_appended_total counter
+prometheus_tsdb_head_samples_appended_total 4.189403861e+10
+# HELP prometheus_tsdb_head_series Total number of series in the head block.
+# TYPE prometheus_tsdb_head_series gauge
+prometheus_tsdb_head_series 17707
+# HELP prometheus_tsdb_head_series_created_total Total number of series created in the head
+# TYPE prometheus_tsdb_head_series_created_total counter
+prometheus_tsdb_head_series_created_total 6.278608e+06
+# HELP prometheus_tsdb_head_series_not_found_total Total number of requests for series that were not found.
+# TYPE prometheus_tsdb_head_series_not_found_total counter
+prometheus_tsdb_head_series_not_found_total 34293
+# HELP prometheus_tsdb_head_series_removed_total Total number of series removed in the head
+# TYPE prometheus_tsdb_head_series_removed_total counter
+prometheus_tsdb_head_series_removed_total 6.260901e+06
+# HELP prometheus_tsdb_head_truncations_failed_total Total number of head truncations that failed.
+# TYPE prometheus_tsdb_head_truncations_failed_total counter
+prometheus_tsdb_head_truncations_failed_total 0
+# HELP prometheus_tsdb_head_truncations_total Total number of head truncations attempted.
+# TYPE prometheus_tsdb_head_truncations_total counter
+prometheus_tsdb_head_truncations_total 1643
+# HELP prometheus_tsdb_lowest_timestamp Lowest timestamp value stored in the database. The unit is decided by the library consumer.
+# TYPE prometheus_tsdb_lowest_timestamp gauge
+prometheus_tsdb_lowest_timestamp 1.7361216e+12
+# HELP prometheus_tsdb_lowest_timestamp_seconds Lowest timestamp value stored in the database.
+# TYPE prometheus_tsdb_lowest_timestamp_seconds gauge
+prometheus_tsdb_lowest_timestamp_seconds 1.7361216e+09
+# HELP prometheus_tsdb_reloads_failures_total Number of times the database failed to reload block data from disk.
+# TYPE prometheus_tsdb_reloads_failures_total counter
+prometheus_tsdb_reloads_failures_total 0
+# HELP prometheus_tsdb_reloads_total Number of times the database reloaded block data from disk.
+# TYPE prometheus_tsdb_reloads_total counter
+prometheus_tsdb_reloads_total 2375
+# HELP prometheus_tsdb_size_retentions_total The number of times that blocks were deleted because the maximum number of bytes was exceeded.
+# TYPE prometheus_tsdb_size_retentions_total counter
+prometheus_tsdb_size_retentions_total 0
+# HELP prometheus_tsdb_storage_blocks_bytes The number of bytes that are currently used for local storage by all blocks.
+# TYPE prometheus_tsdb_storage_blocks_bytes gauge
+prometheus_tsdb_storage_blocks_bytes 2.302291055e+09
+# HELP prometheus_tsdb_symbol_table_size_bytes Size of symbol table on disk (in bytes)
+# TYPE prometheus_tsdb_symbol_table_size_bytes gauge
+prometheus_tsdb_symbol_table_size_bytes 1.656527e+06
+# HELP prometheus_tsdb_time_retentions_total The number of times that blocks were deleted because the maximum time limit was exceeded.
+# TYPE prometheus_tsdb_time_retentions_total counter
+prometheus_tsdb_time_retentions_total 183
+# HELP prometheus_tsdb_tombstone_cleanup_seconds The time taken to recompact blocks to remove tombstones.
+# TYPE prometheus_tsdb_tombstone_cleanup_seconds histogram
+prometheus_tsdb_tombstone_cleanup_seconds_bucket{le="0.005"} 0
+prometheus_tsdb_tombstone_cleanup_seconds_bucket{le="0.01"} 0
+prometheus_tsdb_tombstone_cleanup_seconds_bucket{le="0.025"} 0
+prometheus_tsdb_tombstone_cleanup_seconds_bucket{le="0.05"} 0
+prometheus_tsdb_tombstone_cleanup_seconds_bucket{le="0.1"} 0
+prometheus_tsdb_tombstone_cleanup_seconds_bucket{le="0.25"} 0
+prometheus_tsdb_tombstone_cleanup_seconds_bucket{le="0.5"} 0
+prometheus_tsdb_tombstone_cleanup_seconds_bucket{le="1"} 0
+prometheus_tsdb_tombstone_cleanup_seconds_bucket{le="2.5"} 0
+prometheus_tsdb_tombstone_cleanup_seconds_bucket{le="5"} 0
+prometheus_tsdb_tombstone_cleanup_seconds_bucket{le="10"} 0
+prometheus_tsdb_tombstone_cleanup_seconds_bucket{le="+Inf"} 0
+prometheus_tsdb_tombstone_cleanup_seconds_sum 0
+prometheus_tsdb_tombstone_cleanup_seconds_count 0
+# HELP prometheus_tsdb_vertical_compactions_total Total number of compactions done on overlapping blocks.
+# TYPE prometheus_tsdb_vertical_compactions_total counter
+prometheus_tsdb_vertical_compactions_total 0
+# HELP prometheus_tsdb_wal_completed_pages_total Total number of completed pages.
+# TYPE prometheus_tsdb_wal_completed_pages_total counter
+prometheus_tsdb_wal_completed_pages_total 1.4218446e+07
+# HELP prometheus_tsdb_wal_corruptions_total Total number of WAL corruptions.
+# TYPE prometheus_tsdb_wal_corruptions_total counter
+prometheus_tsdb_wal_corruptions_total 0
+# HELP prometheus_tsdb_wal_fsync_duration_seconds Duration of WAL fsync.
+# TYPE prometheus_tsdb_wal_fsync_duration_seconds summary
+prometheus_tsdb_wal_fsync_duration_seconds{quantile="0.5"} NaN
+prometheus_tsdb_wal_fsync_duration_seconds{quantile="0.9"} NaN
+prometheus_tsdb_wal_fsync_duration_seconds{quantile="0.99"} NaN
+prometheus_tsdb_wal_fsync_duration_seconds_sum 36.805185478
+prometheus_tsdb_wal_fsync_duration_seconds_count 3472
+# HELP prometheus_tsdb_wal_page_flushes_total Total number of page flushes.
+# TYPE prometheus_tsdb_wal_page_flushes_total counter
+prometheus_tsdb_wal_page_flushes_total 2.72209635e+08
+# HELP prometheus_tsdb_wal_truncate_duration_seconds Duration of WAL truncation.
+# TYPE prometheus_tsdb_wal_truncate_duration_seconds summary
+prometheus_tsdb_wal_truncate_duration_seconds{quantile="0.5"} NaN
+prometheus_tsdb_wal_truncate_duration_seconds{quantile="0.9"} NaN
+prometheus_tsdb_wal_truncate_duration_seconds{quantile="0.99"} NaN
+prometheus_tsdb_wal_truncate_duration_seconds_sum 2867.997629081998
+prometheus_tsdb_wal_truncate_duration_seconds_count 1233
+# HELP prometheus_tsdb_wal_truncations_failed_total Total number of WAL truncations that failed.
+# TYPE prometheus_tsdb_wal_truncations_failed_total counter
+prometheus_tsdb_wal_truncations_failed_total 0
+# HELP prometheus_tsdb_wal_truncations_total Total number of WAL truncations attempted.
+# TYPE prometheus_tsdb_wal_truncations_total counter
+prometheus_tsdb_wal_truncations_total 1233
+# HELP promhttp_metric_handler_requests_in_flight Current number of scrapes being served.
+# TYPE promhttp_metric_handler_requests_in_flight gauge
+promhttp_metric_handler_requests_in_flight 1
+# HELP promhttp_metric_handler_requests_total Total number of scrapes by HTTP status code.
+# TYPE promhttp_metric_handler_requests_total counter
+promhttp_metric_handler_requests_total{code="200"} 788274
+promhttp_metric_handler_requests_total{code="500"} 0
+promhttp_metric_handler_requests_total{code="503"} 0
