@@ -22,13 +22,19 @@ if __name__ == "__main__":
     dirname = os.path.join(parent_dir, str(end_time.date()))
     os.makedirs(dirname, 0o774, exist_ok=True)
     for metric in tqdm(prom.all_metrics(), ncols=80, ascii=True, desc='Total'):
-        metric_data = prom.get_metric_range_data(
-            metric,
-            start_time=start_time,
-            end_time=end_time,
-            chunk_size=chunk_size,
-        )
-        metric_df = MetricSnapshotDataFrame(metric_data)
-        metric_df.iloc[:, 1:].to_csv(os.path.join(dirname, f"{metric}.csv"))
+        try:
+            metric_data = prom.get_metric_range_data(
+                metric,
+                start_time=start_time,
+                end_time=end_time,
+                chunk_size=chunk_size,
+            )
+            metric_df = MetricSnapshotDataFrame(metric_data)
+            metric_df.iloc[:, 1:].to_csv(os.path.join(dirname, f"{metric}.csv"))
+        except Exception as err:
+            print(f"Error in metric: {metric}")
+            print(type(err))
+            print(err)
+            
     shutil.make_archive(dirname, 'zip', dirname)
     shutil.rmtree(dirname)
